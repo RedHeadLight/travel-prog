@@ -9,47 +9,62 @@
     <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body>
-    <div class="wrapper">
       <header>
-        <div class="container">
-          <svg></svg>
-          <div class="menu-nav">
-            <a class="menu-nav__item">Туры</a>
-            <a class="menu-nav__item">Обучение</a>
-            <a class="menu-nav__item">О нас</a>
-            <a class="menu-nav__item">Отзывы</a>
-            <a class="menu-nav__item">Фотографии</a>
-            <a class="menu-nav__item">Контакты</a>
-          </div>
+        <div class="container header__container">
+          <a class="header__logo"><svg></svg></a>
+          <ul class="menu-nav">
+            <li class="menu-nav__link">
+              <a class="menu-nav__item">Туры</a>
+            </li>
+            <li class="menu-nav__link">
+              <a class="menu-nav__item">Обучение</a>
+            </li>
+            <li class="menu-nav__link">
+              <a class="menu-nav__item">О нас</a>
+            </li>
+            <li class="menu-nav__link">
+              <a class="menu-nav__item">Отзывы</a>
+            </li>
+            <li class="menu-nav__link">
+              <a class="menu-nav__item">Фотографии</a>
+            </li>
+            <li class="menu-nav__link">
+              <a class="menu-nav__item">Контакты</a>
+            </li>
+          </ul>
           <a class="header__contacts" href="tel:+78007253232">8 800 725-32-32</a>
         </div>
       </header>
       <main>
         <section class="hero">
-          <div class="container">
+          <div class="container hero__container">
             <h1 class="hero__title">Захватывающие вершины Кавказа</h1>
             <p class="hero__subtitle">В сопровождении опытных гидов вы пройдёте через потрясающие ландшафты и совершите восход на вершину горы Чегет.</p>
             <a class="hero__button" href="#">Смотреть тур</a>
-            <iframe></iframe>
-            <div class="hero__footer hero_footer">
+            <div class="hero__slider hero-slider">
+              <div class="hero-slider__slide">
+                <iframe></iframe>
+              </div>
+            </div>
+            <div class="hero__footer hero-footer">
               <div class="hero-footer__wrapper">
                 <svg></svg>
-                <a class="hero-footer__button" href="#">6 дней/5 ночей</a>
+                <span class="hero-footer__button" href="#">6 дней/5 ночей</span>
               </div>
               <div class="hero-footer__wrapper">
                 <svg></svg>
-                <a class="hero-footer__button" href="#">Высокая сложность</a>
+                <span class="hero-footer__button" href="#">Высокая сложность</span>
               </div>
             </div>
           </div>
         </section>
         <section class="tours">
-          <div class="container">
+          <div class="container tours__container">
             <div class="tours__slider-buttons slider-buttons">
               <a class="slider-button__item" href="#"><svg></svg></a>
               <a class="slider-button__item" href="#"><svg></svg></a>
             </div>
-            <h2 class="tours__title">Ближайшие</h2>
+            <h2 class="tours__title title">Ближайшие</h2>
             <div class="tours__slider tours-slider">
               <div class="tours-slider__item slider-item">
                 <img>
@@ -146,8 +161,8 @@
           <a class="tours__order-button" href="#">Показать все туры<svg></svg></a>
         </section>
         <section class="learning">
-          <div class="container">
-            <h2 class="learning__title">Обучение</h2>
+          <div class="container learning__container">
+            <h2 class="learning__title title">Обучение</h2>
             <span class="learning__subtitle">Обучение проводится квалифицированными специалистами, за плечами которых десятки пройденных маршрутов Кавказа, Крыма, Гималаев, Эльбруса, Алтая, Карелии, Адыгеи и других.</span>
             <div class="learning__slider learning-slider">
               <h3 class="learning-slider__title">Наши инструкторы</h3>
@@ -180,47 +195,45 @@
                 <p class="learning-item__subtitle">Опыт походов: Ходит в походы с 2001 года. В России побывал в горных районах Хибины, Архыз, много путешествует по Европе.</p>
               </div>
             </div>
-            <div class="learning__footer learning-footer">
-              <div class="learning-footer__item">
-                <svg></svg>
+            <ul class="learning__footer learning-footer">
+              <li class="learning-footer__item">
+                <a class="learning-footer__link"><svg></svg></a>
                 <span>Изучение спортивного
                   туристского движения</span>
-              </div>
-              <div class="learning-footer__item">
-                <svg></svg>
+              </li>
+              <li class="learning-footer__item">
+                <a class="learning-footer__link"><svg></svg></a>
                 <span>Подготовка и техническое снаряжение в походах</span>
-              </div>
-              <div class="learning-footer__item">
-                <svg></svg>
+              </li>
+              <li class="learning-footer__item">
+                <a class="learning-footer__link"><svg></svg></a>
                 <span>Лекции по окружающей среде, экологии и гигиене</span>
-              </div>
-              <div class="learning-footer__item">
-                <svg></svg>
+              </li>
+              <li class="learning-footer__item">
+                <a class="learning-footer__link"><svg></svg></a>
                 <span>Разъяснение сложности горных препятствий</span>
-              </div>
+              </li>
               <!-- какое-то говно типа прогресс-бара -->
-            </div>
+            </ul>
           </div>
         </section>
         <section class="about">
-          <div class="container">
+          <div class="container about__container">
             <img>
             <div class="about__texts about-texts">
-              <h2 class="about-texts__title">О нас</h2>
-              <div class="about-texts__wrapper texts-wrapper">
-                <span class="texts-wrapper__title">История компании</span>
+              <h2 class="about-texts__title title">О нас</h2>
+              <div class="about-texts__wrapper">
+                <b>История компании</b>
                 <p>В далёком 2000 году мы начали заниматься туризмом — походы, поездки, восхождения, нам это настолько понравилось, что мы этим стали жить.  Спустя 5 лет, в 2005 году мы основали компанию, чтобы показывать людям удивительные места нашей страны.</p>
-              </div>
-              <div class="about-texts__wrapper texts-wrapper">
-                <span class="texts-wrapper__title">Наша цель</span>
+                <b>Наша цель</b>
                 <p>Подарить вам незабываемые впечатления от похода в горы. Мы берём на себя все организационные вопросы. При организации мы обязательно учтём все ваши пожелания. Вам останется только наслаждаться незабываемым приключением в приятной компании.</p>
               </div>
             </div>
           </div>
         </section>
         <section class="reviews">
-          <div class="container">
-            <h2 class="reviews__title">Отзывы</h2>
+          <div class="container reviews__container">
+            <h2 class="reviews__title title">Отзывы</h2>
             <div class="reviews__slider-buttons slider-buttons">
               <a class="slider-buttons__item" href="#"><svg></svg></a>
               <a class="slider-buttons__item" href="#"><svg></svg></a>
@@ -248,7 +261,7 @@
           </div>
         </section>
         <section class="features">
-          <div class="container">
+          <div class="container features__container">
              <h2 class="features__title">Преимущества</h2>
              <div class="features__slider features-slider">
               <div class="features-slider__item features-item">
@@ -274,9 +287,9 @@
           </div>
         </section>
         <section class="gallery">
-          <div class="container">
+          <div class="container gallery__container">
             <div class="gallery__texts">
-              <h2 class="gallery__title">Фотогалерея</h2>
+              <h2 class="gallery__title title">Фотогалерея</h2>
               <p>Добавляйте фото в Instagram с хэштегом #лайфтур, а также отмечайте нас на фото.
                 Лучшие фотографии украсят этот раздел нашего сайта.</p>
             </div>
@@ -302,36 +315,40 @@
           </div>
         </section>
         <section class="form">
-          <div class="container">
-            <h2 class="form__title">Остались вопросы?</h2>
+          <div class="container form__container">
+            <h2 class="form__title title">Остались вопросы?</h2>
             <span class="form__subtitle">Заполните форму и наш оператор свяжется с вами для консультации.</span>
             <form action="https://echo.htmlacademy.ru">
-              <div class="form__wrapper">
-                <label for="name">Имя</label>
-                <input
-                    type="text"
-                    id="name"
-                    name="user-name"
-                    minlength="1"
-                    placeholder="Имя"
-                    aria-label="Поле ввода имени пользователя."
-                />
-                <label for="tel">Телефон</label>
-                <input
-                    type="text"
-                    id="tel"
-                    name="user-tel"
-                    placeholder="Телефон"
-                    aria-label="Поле ввода номера телефона."
-                />
+              <div class="form__wrapper form-wrapper">
+                <div class="form-wrapper__item">
+                  <label for="name">Имя</label>
+                  <input
+                      type="text"
+                      id="name"
+                      name="user-name"
+                      minlength="1"
+                      placeholder="Имя"
+                      aria-label="Поле ввода имени пользователя."
+                  />
+                </div>
+                <div class="form-wrapper__item">
+                  <label for="tel">Телефон</label>
+                  <input
+                      type="tel"
+                      id="tel"
+                      name="user-tel"
+                      placeholder="Телефон"
+                      aria-label="Поле ввода номера телефона."
+                  />
+                </div>
               <button class="form-block__button" type="submit">Отправить</button>
               </div>
             </form>
           </div>
         </section>
         <section class="contacts">
-          <div class="container">
-            <h2 class="contacts__title">Контакты</h2>
+          <div class="container contacts__container">
+            <h2 class="contacts__title title">Контакты</h2>
             <div class="contacts__texts-wrapper contacts-wrapper">
               <p>Свяжитесь с нами любым удобным для вас способом или приходите к нам в гости. Мы будем рады поделиться увлекательными историями и подобрать для вас тур.</p>
               <div class="contacts-wrapper__phone">
@@ -364,20 +381,46 @@
         </section> -->
       </main>
       <footer>
-        <div class="container">
-          <svg></svg>
-          <div class="footer-nav">
-            <a class="menu-nav__item">Туры</a>
-            <a class="menu-nav__item">Обучение</a>
-            <a class="menu-nav__item">О нас</a>
-            <a class="menu-nav__item">Отзывы</a>
-            <a class="menu-nav__item">Фотографии</a>
-            <a class="menu-nav__item">Контакты</a>
-          </div>
+        <div class="container footer__container">
+          <a class="footer__logo"><svg></svg></a>
+          <ul class="footer-nav">
+            <li class="footer-nav__link">
+              <a class="footer-nav__item">Туры</a>
+            </li>
+            <li class="footer-nav__link">
+              <a class="footer-nav__item">Обучение</a>
+            </li>
+            <li class="footer-nav__link">
+              <a class="footer-nav__item">О нас</a>
+            </li>
+            <li class="footer-nav__link">
+              <a class="footer-nav__item">Отзывы</a>
+            </li>
+            <li class="footer-nav__link">
+              <a class="footer-nav__item">Фотографии</a>
+            </li>
+            <li class="footer-nav__link">
+              <a class="footer-nav__item">Контакты</a>
+            </li>
+          </ul>
           <a href="tel:+78007253232">8 800 725-32-32</a>
+          <ul class="footer__social social">
+            <li class="social__item"><a class="social__link">
+              <svg></svg>
+            </a>
+            </li>
+            <li class="social__item"><a class="social__link">
+              <svg></svg>
+            </a>
+            </li>
+            <li class="social__item"><a class="social__link">
+              <svg></svg>
+            </a>
+            </li>
+          </ul>
+          <span>Политика конфиденциальности</span>
         </div>
       </footer>
-    </div>
 
     <!-- Модалки
     <div class="modal modal--preload" data-modal="feedback">
