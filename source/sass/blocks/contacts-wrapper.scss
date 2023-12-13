@@ -1,0 +1,31 @@
+.contacts-wrapper__phone {
+  margin-bottom: 35px;
+  display: flex;
+}
+
+.contacts-wrapper__phone svg {
+  margin-right: 30px;
+}
+
+.contacts-wrapper__mail {
+  margin-bottom: 35px;
+  display: flex;
+}
+
+.contacts-wrapper__mail svg {
+  margin-right: 30px;
+}
+
+.contacts-wrapper__address svg {
+  margin-right: 30px;
+}
+
+.contacts-wrapper__address {
+  display: flex;
+}
+
+.contacts-wrapper {
+  display: flex;
+  gap: 110px;
+  width: 100%;
+}

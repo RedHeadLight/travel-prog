@@ -1,0 +1,37 @@
+.contacts {
+  padding: 65px 120px 95px 120px;
+}
+
+.contacts__container {
+  padding: 0;
+}
+
+.contacts__title {
+  margin: 19px 0 26px 0;
+}
+
+.contacts__texts-wrapper {
+  width: 40%;
+}
+
+.contacts__texts-wrapper p {
+  @include smaller-text;
+  margin-bottom: 50px;
+}
+
+.contacts__cover {
+  display: grid;
+  gap: 8px;
+}
+
+.contacts__detail-block {
+  width: 50%;
+}
+
+.contacts__cover span {
+  @include semibold;
+}
+
+.contacts__cover a {
+  @include smaller-text;
+}

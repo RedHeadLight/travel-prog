@@ -1,0 +1,34 @@
+.footer {
+  padding: 32px 120px;
+}
+
+.footer__container {
+  padding: 0;
+  display: grid;
+  justify-items: center;
+}
+
+.footer__wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 22px;
+  width: 100%;
+}
+
+.footer__wrapper a {
+  @include semibold;
+}
+
+.footer__social {
+  list-style-type: none;
+  padding: 0;
+  margin: 0 auto;
+  margin-bottom: 22px;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.footer__container span {
+  @include small-caption;
+}

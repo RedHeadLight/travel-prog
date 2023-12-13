@@ -1,0 +1,24 @@
+.learning {
+  padding: 0 120px;
+}
+
+.learning__container {
+  padding: 0;
+}
+
+.learning__subtitle {
+  @include smaller-text;
+  color: #FFFF;
+  margin-bottom: 56px;
+}
+
+.learning__title {
+  margin-bottom: 38px;
+}
+
+.learning__footer {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}

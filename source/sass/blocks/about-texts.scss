@@ -1,0 +1,14 @@
+.about-texts__wrapper b {
+  @include subtitle;
+  margin-bottom: 20px;
+}
+
+.about-texts__wrapper p {
+  margin-bottom: 25px;
+  @include regular-text;
+}
+
+.about-texts__title {
+  margin: 0;
+  margin-bottom: 57px;
+}

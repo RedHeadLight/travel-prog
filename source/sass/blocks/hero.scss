@@ -1,0 +1,30 @@
+.hero {
+  padding: 80px 120px;
+  background-image: url(/source/img/Hero-background-desktop.jpg);
+}
+
+.hero__container {
+  padding: 0;
+}
+
+.hero__title {
+  @include huge-title;
+  // color: #FFF;
+  margin-bottom: 25px;
+}
+
+.hero__container p {
+  @include text;
+  margin: 0 0 35px 0;
+  width: 40%;
+}
+
+.hero__button {
+  width: 180px;
+  background-color: #0266C1;
+  padding: 20px;
+  text-transform: uppercase;
+  @include big-buttons;
+  color: #FFF;
+  margin-bottom: 134px;
+}

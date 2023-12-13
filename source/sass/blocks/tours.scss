@@ -1,0 +1,20 @@
+.tours {
+  padding: 100px 120px;
+}
+
+.tours__container {
+  padding: 0;
+}
+
+.tours__wrapper {
+  display: flex;
+}
+
+.tours__order-button {
+  margin: 0 auto;
+  width: 237px;
+  padding: 10px;
+  @include big-buttons;
+  text-transform: uppercase;
+  margin-left: 12px;
+}

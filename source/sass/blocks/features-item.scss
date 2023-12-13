@@ -1,0 +1,9 @@
+.features-item__title {
+  margin: 0;
+  @include semibold;
+  margin-bottom: 15px;
+}
+
+.features-item p {
+  @include regular-text;
+}

@@ -1,0 +1,9 @@
+.learning-slider__title {
+  @include subtitle;
+  margin: 0;
+}
+
+.learning-slider__cover {
+  display: flex;
+  justify-content: space-between;
+}

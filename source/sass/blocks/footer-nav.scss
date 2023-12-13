@@ -1,0 +1,10 @@
+.footer-nav {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  gap: 30px;
+}
+
+.footer-nav__link {
+  @include small-buttons;
+}

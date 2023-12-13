@@ -1,0 +1,21 @@
+.gallery {
+  padding: 125px 0 0 0;
+}
+
+.gallery__container {
+  padding: 0;
+}
+
+.gallery__texts {
+  margin: 0 120px;
+}
+
+.gallery__title {
+  margin: 0;
+  margin-bottom: 26px;
+}
+
+.gallery__texts p {
+  @include smaller-text;
+  margin: 0;
+}

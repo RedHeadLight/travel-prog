@@ -1,0 +1,9 @@
+.menu-nav {
+  display: flex;
+  margin: 0;
+  padding: 30px 40px;
+  gap: 30px;
+  @include subtitle-mobile;
+  list-style-type: none;
+  color: #FFFFFF;
+}

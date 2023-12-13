@@ -1,0 +1,45 @@
+.slider-item__cover {
+  background-color: #0266C1;
+  width: 94px;
+  padding: 6px 12px;
+  display: flex;
+  gap: 6px;
+  @include medium-caption;
+  color: #FFF;
+  margin-bottom: 15px;
+}
+
+.slider-item h2 {
+  @include item-title;
+  color: #FFF;
+  margin: 0;
+}
+
+.slider-item__top {
+  display: flex;
+}
+
+.slider-item__wrapper {
+  display: flex;
+  gap: 12px;
+}
+
+.slider-item__point {
+  @include medium-caption;
+  color: #FFF;
+}
+
+.slider-item__footer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.item-footer__title {
+  @include small-caption;
+  color: #FFFF;
+}
+
+.item-footer__subtitle {
+  @include big-caption;
+  color: #FFFF;
+}

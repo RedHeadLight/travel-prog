@@ -1,0 +1,18 @@
+.features-slider {
+  display: flex;
+  gap: 30px;
+}
+
+.features-slider__item {
+  width: 380px;
+  padding: 40px 20px;
+  display: grid;
+}
+
+.features-slider__buttons {
+  justify-items: center;
+}
+
+.features-slider__item svg {
+  align-items: center;
+}

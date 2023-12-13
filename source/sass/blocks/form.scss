@@ -1,0 +1,36 @@
+.form {
+  background-image: url(/source/img/form-background-desktop.jpg);
+  background-size: 100%;
+}
+
+.form__container {
+  width: 960px;
+  margin: 0 auto;
+  display: grid;
+}
+
+.form__title {
+  margin: 0;
+  margin-top: 293PX;
+  margin-bottom: 20px;
+}
+
+.form__texts {
+  margin: 0 auto;
+  margin-bottom: 40px;
+  display: grid;
+  justify-items: center;
+}
+
+.form__wrapper {
+  display: flex;
+  gap: 30px;
+}
+
+.form__subtitle {
+  @include smaller-text;
+}
+
+.form__container form {
+  justify-items: center;
+}
