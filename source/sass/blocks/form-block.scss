@@ -3,4 +3,9 @@
   padding: 20px 20px;
   @include medium-buttons;
   color: #FFF;
+  width: 180px;
+
+  @media (max-width: $tablet) {
+    width: 100%;
+  }
 }

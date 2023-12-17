@@ -2,8 +2,30 @@
   margin: 0;
   @include semibold;
   margin-bottom: 15px;
+
+  @media (max-width: $tablet) {
+    @include smallbold-tablet;
+  }
 }
 
 .features-item p {
   @include regular-text;
+}
+
+.features-item svg {
+  margin-bottom: 25px;
+}
+
+.features-item--safety {
+
+  @media (max-width: $tablet) {
+    order: -2;
+  }
+}
+
+.features-item--knowledge {
+
+  @media (max-width: $tablet) {
+    order: -1;
+  }
 }

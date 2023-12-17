@@ -3,6 +3,10 @@
   padding: 32px 20px;
   max-width: 1200px;
   margin: auto;
+
+  @media (max-width: $tablet) {
+    padding: 20px 45px;
+  }
 }
 
 .header__container {

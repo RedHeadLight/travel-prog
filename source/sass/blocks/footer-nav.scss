@@ -7,4 +7,8 @@
 
 .footer-nav__link {
   @include small-buttons;
+
+  @media (max-width: $tablet) {
+    @include small-buttons;
+  }
 }

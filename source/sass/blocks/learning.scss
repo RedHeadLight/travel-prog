@@ -21,4 +21,12 @@
   margin: 0;
   padding: 0;
   display: flex;
+  margin-top: 56px;
+
+  @media (max-width: $tablet) {
+    grid-template-columns: 208px 208px;
+    display: grid;
+    gap: 91px 72px;
+    margin: 0 auto;
+  }
 }

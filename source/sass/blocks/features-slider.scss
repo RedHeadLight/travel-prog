@@ -1,18 +1,41 @@
 .features-slider {
   display: flex;
   gap: 30px;
+  margin-bottom: 50px;
+
+  @media (max-width: $tablet) {
+    display: grid;
+    grid-template-columns: 324px 324px;
+    gap: 30px;
+    margin: auto;
+  }
 }
 
 .features-slider__item {
   width: 380px;
   padding: 40px 20px;
   display: grid;
+
+  @media (max-width: $tablet) {
+    padding: 30px 20px;
+  }
 }
 
 .features-slider__buttons {
-  justify-items: center;
+  display: block;
+  margin: auto;
+
+  @media (max-width: $tablet) {
+    display: none;
+  }
 }
 
 .features-slider__item svg {
-  align-items: center;
+  display: block;
+  margin: auto;
+}
+
+.features-slider__item span {
+  display: block;
+  margin: auto;
 }

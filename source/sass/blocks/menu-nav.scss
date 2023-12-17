@@ -5,5 +5,13 @@
   gap: 30px;
   @include subtitle-mobile;
   list-style-type: none;
+
+  @media (max-width: $tablet) {
+    display: none;
+  }
+}
+
+.menu-nav__item {
   color: #FFFFFF;
 }
+

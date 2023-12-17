@@ -11,10 +11,10 @@
 }
 
 .tours__order-button {
-  margin: 0 auto;
+  display: block;
+  margin: auto;
   width: 237px;
   padding: 10px;
   @include big-buttons;
   text-transform: uppercase;
-  margin-left: 12px;
 }

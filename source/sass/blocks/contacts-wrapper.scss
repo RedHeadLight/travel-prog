@@ -28,4 +28,9 @@
   display: flex;
   gap: 110px;
   width: 100%;
+
+  @media (max-width: $tablet) {
+    display: grid;
+    gap: 0;
+  }
 }

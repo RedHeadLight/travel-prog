@@ -1,3 +1,12 @@
 .reviews-item__texts {
   width: 40%;
+  @include regular-text;
+
+  @media (max-width: $tablet) {
+    @include extrasmall-text;
+  }
+}
+
+.reviews-item__title {
+  @include big-caption;
 }

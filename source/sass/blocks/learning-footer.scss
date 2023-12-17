@@ -1,0 +1,7 @@
+.learning-footer__link span {
+  @include smaller-text;
+
+  @media (max-width: $tablet) {
+    @include regular-text;
+  }
+}

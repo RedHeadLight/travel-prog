@@ -1,0 +1,29 @@
+.form-wrapper__item label{
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+
+  white-space: nowrap;
+
+  border: 0;
+
+  clip: rect(0 0 0 0);
+  clip-path: inset(100%);
+}
+
+.form-wrapper__item input {
+  padding: 20px 30px;
+  width: 100%;
+}
+
+.form-wrapper__item {
+  width: 45%;
+
+  @media (max-width: $tablet) {
+    width: 100%;
+  }
+}

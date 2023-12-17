@@ -13,9 +13,20 @@
 .gallery__title {
   margin: 0;
   margin-bottom: 26px;
+
+  @media (max-width: $tablet) {
+    @include small-title;
+    margin-top: 60px;
+    margin-bottom: 20px;
+  }
 }
 
 .gallery__texts p {
   @include smaller-text;
   margin: 0;
+
+  @media (max-width: $tablet) {
+    @include regular-text;
+    margin-bottom: 21px;
+  }
 }

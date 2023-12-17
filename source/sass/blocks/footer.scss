@@ -32,3 +32,11 @@
 .footer__container span {
   @include small-caption;
 }
+
+.footer__phone {
+  @include semibold;
+
+  @media (max-width: $tablet) {
+    display: none;
+  }
+}
