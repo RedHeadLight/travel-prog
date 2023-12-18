@@ -1,23 +1,45 @@
 .contacts-wrapper__phone {
   margin-bottom: 35px;
   display: flex;
+
+  @media (max-width: $mobile) {
+    margin-bottom: 30px;
+  }
 }
 
 .contacts-wrapper__phone svg {
   margin-right: 30px;
+
+  @media (max-width: $mobile) {
+    margin-right: 10px;
+  }
 }
 
 .contacts-wrapper__mail {
   margin-bottom: 35px;
   display: flex;
+
+  @media (max-width: $mobile) {
+    margin-bottom: 30px;
+  }
 }
 
 .contacts-wrapper__mail svg {
   margin-right: 30px;
+
+
+  @media (max-width: $mobile) {
+    margin-right: 10px;
+  }
 }
 
 .contacts-wrapper__address svg {
   margin-right: 30px;
+
+
+  @media (max-width: $mobile) {
+    margin-right: 10px;
+  }
 }
 
 .contacts-wrapper__address {

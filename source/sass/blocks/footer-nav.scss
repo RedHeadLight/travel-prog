@@ -3,12 +3,22 @@
   padding: 0;
   display: flex;
   gap: 30px;
+
+  @media (max-width: $mobile) {
+    display: grid;
+    grid-template-columns: 120px 120px;
+    gap: 15px;
+  }
 }
 
 .footer-nav__link {
   @include small-buttons;
 
   @media (max-width: $tablet) {
+    @include small-buttons;
+  }
+
+  @media (max-width: $mobile) {
     @include small-buttons;
   }
 }

@@ -6,10 +6,19 @@
   @media (max-width: $tablet) {
     @include smallbold-tablet;
   }
+
+
+  @media (max-width: $mobile) {
+    @include semibold-mobile;
+  }
 }
 
 .features-item p {
   @include regular-text;
+
+  @media (max-width: $mobile) {
+    @include extrasmall-text;
+  }
 }
 
 .features-item svg {

@@ -29,6 +29,11 @@
     margin-top: 186px;
     margin-bottom: 25px;
   }
+
+  @media (max-width: $mobile) {
+    @include small-title-mobile;
+    margin-top: 174px;
+  }
 }
 
 .form__texts {
@@ -50,6 +55,11 @@
 
 .form__subtitle {
   @include smaller-text;
+
+  @media (max-width: $mobile) {
+    @include extrasmall-text;
+    margin-bottom: 20px;
+  }
 }
 
 .form__container form {

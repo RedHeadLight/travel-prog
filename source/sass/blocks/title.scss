@@ -4,4 +4,8 @@
   @media (max-width: $tablet) {
     @include title;
   }
+
+  @media (max-width: $mobile) {
+    @include small-title-mobile;
+  }
 }

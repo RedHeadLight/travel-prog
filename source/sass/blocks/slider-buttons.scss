@@ -3,4 +3,8 @@
   height: 35px;
   padding: 17px 12px;
   background-color: #0266C1;
+
+  @media (max-width: $mobile) {
+    margin-right: 10px;
+  }
 }

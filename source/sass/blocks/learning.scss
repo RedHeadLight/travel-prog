@@ -1,5 +1,9 @@
 .learning {
   padding: 0 120px;
+
+  @media (max-width: $mobile) {
+    padding: 20px 15px;
+  }
 }
 
 .learning__container {
@@ -14,6 +18,10 @@
 
 .learning__title {
   margin-bottom: 38px;
+
+  @media (max-width: $mobile) {
+    @include small-title-mobile;
+  }
 }
 
 .learning__footer {
@@ -28,5 +36,10 @@
     display: grid;
     gap: 91px 72px;
     margin: 0 auto;
+  }
+
+  @media (max-width: $mobile) {
+    grid: none;
+    gap: 25px;
   }
 }

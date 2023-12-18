@@ -1,5 +1,9 @@
 .reviews {
   padding: 30px 120px 20px 120px;
+
+  @media (max-width: $mobile) {
+    padding: 30px 15px;
+  }
 }
 
 .reviews__container {
@@ -9,4 +13,13 @@
 .reviews__cover {
   display: flex;
   justify-content: space-between;
+}
+
+.reviews__title {
+
+  @media (max-width: $mobile) {
+    margin: 0;
+    margin-bottom: 15px;
+    @include small-title-mobile;
+  }
 }

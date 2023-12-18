@@ -11,3 +11,13 @@
 .learning-slider {
   display: flex;
 }
+
+.learning-slider__item {
+
+  @media (max-width: $mobile) {
+    padding: 15px;
+  }
+}.learning-slider__item div {
+  display: flex;
+  justify-content: space-between;
+}

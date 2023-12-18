@@ -17,6 +17,10 @@
     margin: 15px 0 20px 45px;
     @include small-title-tablet;
   }
+
+  @media (max-width: $mobile) {
+    margin: 6px 0 12px 15px;
+  }
 }
 
 .contacts__texts-wrapper {
@@ -29,6 +33,10 @@
 
   @media (max-width: $tablet) {
     margin-bottom: 40px;
+  }
+
+  @media (max-width: $mobile) {
+    margin-bottom: 30px;
   }
 }
 
@@ -48,6 +56,10 @@
     margin-left: 45px;
     width: 100%;
   }
+
+  @media (max-width: $mobile) {
+    margin-left: 15px;
+  }
 }
 
 .contacts__cover span {
@@ -55,6 +67,10 @@
 
   @media (max-width: $tablet) {
     @include smallbold-tablet;
+  }
+
+  @media (max-width: $mobile) {
+    @include semibold-mobile;
   }
 }
 
@@ -64,6 +80,10 @@
   @media (max-width: $tablet) {
     @include regular-text;
   }
+
+  @media (max-width: $mobile) {
+    @include smaller-text-mobile;
+  }
 }
 
 .contacts__requisites {
@@ -71,5 +91,10 @@
   @media (max-width: $tablet) {
     display: flex;
     gap: 40px;
+  }
+
+  @media (max-width: $mobile) {
+    display: grid;
+    gap: 30px;
   }
 }

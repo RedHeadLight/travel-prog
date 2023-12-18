@@ -7,6 +7,10 @@
   @media (max-width: $tablet) {
     padding: 20px 45px;
   }
+
+  @media (max-width: $mobile) {
+    padding: 15px;
+  }
 }
 
 .header__container {
@@ -20,4 +24,19 @@
   @include semibold;
   padding: 30px 0;
   color: #FFFFFF;
+
+  @media (max-width: $mobile) {
+    padding: 14px 0;
+    @include semibold-mobile;
+    color: #FFFFFF;
+    margin-left: 73px;
+  }
+}
+
+.header__wrapper {
+
+  @media (max-width: $mobile) {
+    display: grid;
+    gap: 14px;
+  }
 }

@@ -1,5 +1,9 @@
 .tours {
   padding: 100px 120px;
+
+  @media (max-width: $mobile) {
+    padding: 20px 20px 30px 20px;
+  }
 }
 
 .tours__container {
@@ -17,4 +21,8 @@
   padding: 10px;
   @include big-buttons;
   text-transform: uppercase;
+
+  @media (max-width: $mobile) {
+    @include big-buttons-mobile;
+  }
 }

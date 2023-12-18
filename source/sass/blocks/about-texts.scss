@@ -5,6 +5,11 @@
   @media (max-width: $tablet) {
     @include subtitle-tablet;
   }
+
+  @media (max-width: $mobile) {
+    @include subtitle-mobile;
+    margin-bottom: 15px;
+  }
 }
 
 .about-texts__wrapper p {
@@ -18,5 +23,10 @@
 
   @media (max-width: $tablet) {
     @include small-title-tablet;
+  }
+
+  @media (max-width: $mobile) {
+    @include small-title-mobile;
+    margin-bottom: 25px;
   }
 }

@@ -5,8 +5,23 @@
   @media (max-width: $tablet) {
     @include extrasmall-text;
   }
+
+  @media (max-width: $mobile) {
+    @include text-mobile;
+  }
 }
 
 .reviews-item__title {
   @include big-caption;
+
+  @media (max-width: $mobile) {
+    @include big-caption-mobile;
+  }
+}
+
+.reviews-item__subtitle {
+
+  @media (max-width: $mobile) {
+    @include small-caption-mobile;
+  }
 }

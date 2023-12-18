@@ -4,4 +4,16 @@
   @media (max-width: $tablet) {
     @include regular-text;
   }
+
+  @media (max-width: $mobile) {
+    @include extrasmall-text;
+    margin-left: 15px;
+  }
+}
+
+.learning-footer__link svg {
+
+  @media (max-width: $mobile) {
+    margin-right: 15px;
+  }
 }
