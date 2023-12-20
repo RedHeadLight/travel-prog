@@ -3,7 +3,7 @@
   margin: 0;
   padding: 30px 40px;
   gap: 30px;
-  @include subtitle-mobile;
+  @include small-buttons;
   list-style-type: none;
 
   @media (max-width: $tablet) {

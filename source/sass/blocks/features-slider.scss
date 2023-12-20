@@ -10,10 +10,10 @@
     margin: auto;
   }
 
-
   @media (max-width: $mobile) {
     grid: none;
     width: 100%;
+    justify-content: center;
   }
 }
 

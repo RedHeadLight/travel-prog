@@ -17,3 +17,63 @@
     margin-right: 15px;
   }
 }
+
+.learning-footer__item {
+  display: flex;
+  gap: 10px;
+  position: relative;
+
+  &::after {
+    content: "";
+    width: 14px;
+    height: 14px;
+    border-radius: 100%;
+    background-color: #0266C1;
+    position: absolute;
+    left: 0;
+    bottom: -19px;
+
+    @media (max-width: $mobile) {
+      left: -33px;
+      bottom: 8px;
+    }
+  }
+
+  &::before {
+    content: "";
+    width: 100%;
+    height: 1px;
+    background-color: #0266C1;
+    opacity: 0.2;
+    position: absolute;
+    top: 60px;
+
+
+    @media (max-width: $tablet) {
+      width: 145%;
+      top: 83px;
+    }
+
+    @media (max-width: $mobile) {
+      display: none;
+    }
+  }
+}
+
+.learning-footer {
+  position: relative;
+
+  &::after {
+
+    @media (max-width: $mobile) {
+      content: "";
+      width: 1px;
+      height: 183px;
+      background-color: #0266C1;
+      opacity: 0.2;
+      position: absolute;
+      top: 13px;
+      left: -26px;
+    }
+  }
+}

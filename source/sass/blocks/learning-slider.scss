@@ -6,10 +6,17 @@
 .learning-slider__cover {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 20px;
+  margin-top: 56px;
 }
 
 .learning-slider {
   display: flex;
+  gap: 20px;
+
+  @media (max-width: $tablet) {
+    margin-bottom: 25px;
+  }
 }
 
 .learning-slider__item {
@@ -20,4 +27,11 @@
 }.learning-slider__item div {
   display: flex;
   justify-content: space-between;
+}
+
+.learning-slider__button {
+  width: 37px;
+  height: 35px;
+  padding: 17px 12px;
+  background-color: #0266C1;
 }

@@ -6,6 +6,6 @@
   }
 
   @media (max-width: $mobile) {
-    @include small-title-mobile;
+    @include small-title;
   }
 }

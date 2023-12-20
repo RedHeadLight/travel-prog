@@ -4,12 +4,12 @@
   margin-bottom: 15px;
 
   @media (max-width: $tablet) {
-    @include smallbold-tablet;
+    @include smallbold;
   }
 
 
   @media (max-width: $mobile) {
-    @include semibold-mobile;
+    @include semibold;
   }
 }
 
@@ -37,4 +37,13 @@
   @media (max-width: $tablet) {
     order: -1;
   }
+}
+
+.features-item__icon {
+  width: 54px;
+  height: 54px;
+  padding: 16px;
+  border: 1px solid #0266C1;
+  margin: 0 auto;
+  margin-bottom: 30px;
 }

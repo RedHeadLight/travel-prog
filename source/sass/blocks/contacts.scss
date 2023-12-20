@@ -15,11 +15,11 @@
 
   @media (max-width: $tablet) {
     margin: 15px 0 20px 45px;
-    @include small-title-tablet;
+    @include small-title;
   }
 
   @media (max-width: $mobile) {
-    margin: 6px 0 12px 15px;
+    margin: 6px 0 12px 45px;
   }
 }
 
@@ -37,6 +37,7 @@
 
   @media (max-width: $mobile) {
     margin-bottom: 30px;
+    width: 50%;
   }
 }
 
@@ -58,7 +59,7 @@
   }
 
   @media (max-width: $mobile) {
-    margin-left: 15px;
+    margin-left: 45px;
   }
 }
 
@@ -66,11 +67,11 @@
   @include semibold;
 
   @media (max-width: $tablet) {
-    @include smallbold-tablet;
+    @include smallbold;
   }
 
   @media (max-width: $mobile) {
-    @include semibold-mobile;
+    @include semibold;
   }
 }
 
@@ -82,7 +83,7 @@
   }
 
   @media (max-width: $mobile) {
-    @include smaller-text-mobile;
+    @include smaller-text;
   }
 }
 

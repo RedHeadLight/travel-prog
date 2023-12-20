@@ -7,7 +7,7 @@
   }
 
   @media (max-width: $mobile) {
-    @include text-mobile;
+    @include text;
   }
 }
 
@@ -15,13 +15,13 @@
   @include big-caption;
 
   @media (max-width: $mobile) {
-    @include big-caption-mobile;
+    @include big-caption;
   }
 }
 
 .reviews-item__subtitle {
 
   @media (max-width: $mobile) {
-    @include small-caption-mobile;
+    @include small-caption;
   }
 }

@@ -25,18 +25,37 @@
   padding: 30px 0;
   color: #FFFFFF;
 
+  @media (max-width: $tablet) {
+    color: #FFFFFF;
+  }
   @media (max-width: $mobile) {
     padding: 14px 0;
-    @include semibold-mobile;
+    @include semibold;
     color: #FFFFFF;
     margin-left: 73px;
+    color: #FFFFFF;
   }
 }
 
 .header__wrapper {
+  display: flex;
+
+  @media (max-width: $tablet) {
+    width: 65%;
+    justify-content: space-between;
+  }
 
   @media (max-width: $mobile) {
     display: grid;
     gap: 14px;
+    width: 30%;
+  }
+}
+
+.header__icon-wrapper {
+  display: none;
+
+  @media (max-width: $tablet) {
+    display: block;
   }
 }

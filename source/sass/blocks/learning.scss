@@ -12,7 +12,6 @@
 
 .learning__subtitle {
   @include smaller-text;
-  color: #FFFF;
   margin-bottom: 56px;
 }
 
@@ -20,7 +19,7 @@
   margin-bottom: 38px;
 
   @media (max-width: $mobile) {
-    @include small-title-mobile;
+    @include small-title;
   }
 }
 
@@ -34,7 +33,7 @@
   @media (max-width: $tablet) {
     grid-template-columns: 208px 208px;
     display: grid;
-    gap: 91px 72px;
+    gap: 136px 91px;
     margin: 0 auto;
   }
 

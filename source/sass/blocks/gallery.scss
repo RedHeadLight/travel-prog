@@ -12,11 +12,11 @@
 
 .gallery__texts {
   margin: 0 120px;
+  margin-bottom: 46px;
 }
 
 .gallery__title {
-  margin: 0;
-  margin-bottom: 26px;
+  margin: 19px 0 27px 0;
 
   @media (max-width: $tablet) {
     @include small-title;
@@ -33,13 +33,39 @@
 .gallery__texts p {
   @include smaller-text;
   margin: 0;
+  width: 60%;
 
   @media (max-width: $tablet) {
     @include regular-text;
-    margin-bottom: 21px;
   }
 
   @media (max-width: $mobile) {
     @include extrasmall-text;
+  }
+}
+
+.gallery__wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.gallery-block--last {
+
+  @media (max-width: $tablet) {
+    display: none;
+  }
+}
+
+.gallery-block--secondary {
+
+  @media (max-width: $mobile) {
+    display: none;
+  }
+}
+
+.gallery__texts {
+
+  @media (max-width: $tablet) {
+    margin-bottom: 21px;
   }
 }

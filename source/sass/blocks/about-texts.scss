@@ -3,11 +3,11 @@
   margin-bottom: 20px;
 
   @media (max-width: $tablet) {
-    @include subtitle-tablet;
+    @include subtitle;
   }
 
   @media (max-width: $mobile) {
-    @include subtitle-mobile;
+    @include subtitle;
     margin-bottom: 15px;
   }
 }
@@ -22,11 +22,11 @@
   margin-bottom: 57px;
 
   @media (max-width: $tablet) {
-    @include small-title-tablet;
+    @include small-title;
   }
 
   @media (max-width: $mobile) {
-    @include small-title-mobile;
+    @include small-title;
     margin-bottom: 25px;
   }
 }

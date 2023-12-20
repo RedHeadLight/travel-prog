@@ -1,5 +1,6 @@
 .features {
-  padding: 0;
+  // padding: 42px 120px 81px 120px;
+  padding: 42px 0 81px 0;
 
   @media (max-width: $mobile) {
     padding: 40px 15px;
@@ -22,7 +23,7 @@
   }
 
   @media (max-width: $mobile) {
-    @include small-title-mobile;
+    @include small-title;
     margin-bottom: 20px;
   }
 }

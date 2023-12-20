@@ -16,10 +16,11 @@
 }
 
 .reviews__title {
+  @include small-title;
 
   @media (max-width: $mobile) {
     margin: 0;
     margin-bottom: 15px;
-    @include small-title-mobile;
+    @include small-title;
   }
 }

@@ -1,6 +1,10 @@
 .footer {
   padding: 32px 120px;
 
+  @media (max-width: $tablet) {
+    padding: 40px 0 20px 0;
+  }
+
   @media (max-width: $mobile) {
     padding: 23px 15px 20px 15px;
   }
@@ -19,14 +23,11 @@
   width: 100%;
 
   @media (max-width: $mobile) {
-    display: grid;
+    display: block;
     text-align: center;
   }
 }
 
-.footer__wrapper a {
-  @include semibold;
-}
 
 .footer__social {
   list-style-type: none;
@@ -44,6 +45,7 @@
 
 .footer__phone {
   @include semibold;
+  margin: auto;
 
   @media (max-width: $tablet) {
     display: none;
@@ -51,6 +53,10 @@
 }
 
 .footer__logo {
+
+  @media (max-width: $tablet) {
+    margin-left: 45px;
+  }
 
   @media (max-width: $mobile) {
     display: block;

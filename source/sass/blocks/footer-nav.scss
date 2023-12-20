@@ -4,21 +4,18 @@
   display: flex;
   gap: 30px;
 
+  @media (max-width: $tablet) {
+    margin-right: 45px;
+  }
+
   @media (max-width: $mobile) {
     display: grid;
     grid-template-columns: 120px 120px;
     gap: 15px;
+    justify-content: center;
   }
 }
 
-.footer-nav__link {
+.footer-nav__item {
   @include small-buttons;
-
-  @media (max-width: $tablet) {
-    @include small-buttons;
-  }
-
-  @media (max-width: $mobile) {
-    @include small-buttons;
-  }
 }

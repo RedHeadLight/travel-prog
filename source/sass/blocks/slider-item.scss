@@ -7,21 +7,25 @@
   @include medium-caption;
   color: #FFF;
   margin-bottom: 15px;
+  margin-right: 27px;
 }
 
 .slider-item h2 {
   @include item-title;
   color: #FFF;
   margin: 0;
+  margin-bottom: 30px;
 }
 
 .slider-item__top {
   display: flex;
+  margin-bottom: 15px;
 }
 
 .slider-item__wrapper {
   display: flex;
   gap: 12px;
+  margin-right: 14px;
 }
 
 .slider-item__point {
@@ -42,4 +46,23 @@
 .item-footer__subtitle {
   @include big-caption;
   color: #FFFF;
+}
+
+.slider-item__main-wrapper {
+  position: absolute;
+  top: 105px;
+  left: 0;
+  padding: 30px 20px;
+}
+
+.slider-item {
+  position: relative;
+}
+
+.main-wrapper--fisht {
+  top: 73px;
+}
+
+.main-wrapper--beluha {
+  top: 71px;
 }
