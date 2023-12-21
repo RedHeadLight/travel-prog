@@ -1,0 +1,23 @@
+.social__link svg {
+  fill: #2D383F;
+}
+
+.social__link {
+
+  &:hover, &:focus {
+    border: 1px solid #1C3374;
+    background-color: #FFF;
+
+    svg {
+      fill: #1C3374;
+    }
+  }
+
+  &:active {
+    background-color: #1C3374;
+
+    svg {
+      fill: #FFF;
+    }
+  }
+}

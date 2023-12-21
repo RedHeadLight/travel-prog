@@ -30,9 +30,21 @@
   }
   @media (max-width: $mobile) {
     padding: 14px 0;
-    @include semibold;
     color: #FFFFFF;
     margin-left: 73px;
+  }
+
+  &:hover, &:focus {
+    color: #1C3374;
+  }
+
+  &:active {
+    color: #FFFFFF;
+    opacity: 0.5;
+  }
+
+  &:disabled,
+  &--disabled {
     color: #FFFFFF;
   }
 }

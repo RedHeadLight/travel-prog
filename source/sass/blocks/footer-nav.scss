@@ -18,4 +18,19 @@
 
 .footer-nav__item {
   @include small-buttons;
+
+  &:hover, &:focus {
+    border-bottom: 1px solid #2D383F;
+  }
+
+  &:active {
+    outline: 1px solid #2D383F;
+  }
+
+  &:disabled,
+  &--disabled {
+    border: none;
+  }
 }
+
+

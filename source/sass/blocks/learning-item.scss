@@ -11,3 +11,33 @@
 .learning-item img {
   margin-bottom: 15px;
 }
+
+.learning-item__social-link svg {
+  fill: #2D383F;
+  background-color: #fff;
+}
+
+.learning-item__social-link svg {
+
+  &:hover, &:focus {
+    border: 1px solid #2D383F;
+    background-color: #fff;
+  }
+
+  &:active {
+    background-color: #0266C1;
+
+    svg {
+      fill: #FFF;
+    }
+  }
+
+  &:disabled,
+  &--disabled {
+    background-color: #fff;
+
+    svg {
+      fill: #999999;
+    }
+  }
+}

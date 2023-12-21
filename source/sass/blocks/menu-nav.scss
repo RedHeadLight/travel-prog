@@ -13,5 +13,18 @@
 
 .menu-nav__item {
   color: #FFFFFF;
+
+  &:hover, &:focus {
+    border-bottom: 1px solid #FFF;
+  }
+
+  &:active {
+    outline: 1px solid #FFF;
+  }
+
+  &:disabled,
+  &--disabled {
+    border: none;
+  }
 }
 

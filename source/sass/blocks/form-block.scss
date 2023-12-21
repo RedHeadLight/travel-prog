@@ -8,4 +8,22 @@
   @media (max-width: $tablet) {
     width: 100%;
   }
+
+
+  &:hover, &:focus {
+    border: 1px solid #1C3374;
+    background-color: #FFF;
+    color: #1C3374;
+  }
+
+  &:active {
+    background-color: #1C3374;
+  }
+
+  &:disabled,
+  &--disabled {
+    background-color: #999999;
+    color: #FFF;
+    border: none;
+  }
 }

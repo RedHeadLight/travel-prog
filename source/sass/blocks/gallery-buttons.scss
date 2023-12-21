@@ -1,6 +1,39 @@
+.gallery-buttons__item svg {
+  fill: #FFF;
+}
+
 .gallery-buttons__item {
   background-color: #0266C1;
   width: 78px;
   height: 35px;
   padding: 17px 12px;
+
+
+  &:hover, &:focus {
+    border: 1px solid #1C3374;
+    background-color: #FFF;
+
+    svg {
+      fill: #1C3374;
+    }
+  }
+
+  &:active {
+    background-color: #1C3374;
+
+    svg {
+      fill: #FFF;
+    }
+  }
+
+  &:disabled,
+  &--disabled {
+    background-color: #999999;
+    color: #FFF;
+    border: none;
+
+    svg {
+      fill: #FFF;
+    }
+  }
 }

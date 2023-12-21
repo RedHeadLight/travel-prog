@@ -29,9 +29,42 @@
   justify-content: space-between;
 }
 
+.learning-slider__button svg {
+  fill: #FFF;
+}
+
 .learning-slider__button {
   width: 37px;
   height: 35px;
   padding: 17px 12px;
   background-color: #0266C1;
+
+
+  &:hover, &:focus {
+    border: 1px solid #1C3374;
+    background-color: #FFF;
+
+    svg {
+      fill: #1C3374;
+    }
+  }
+
+  &:active {
+    background-color: #1C3374;
+
+    svg {
+      fill: #FFF;
+    }
+  }
+
+  &:disabled,
+  &--disabled {
+    background-color: #999999;
+    color: #FFF;
+    border: none;
+
+    svg {
+      fill: #FFF;
+    }
+  }
 }

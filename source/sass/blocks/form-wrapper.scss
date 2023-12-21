@@ -27,3 +27,23 @@
     width: 100%;
   }
 }
+
+.form-wrapper__item input {
+
+  &:hover {
+    border: 1px solid #0266C1;
+  }
+
+  &:active, &:focus {
+    outline: 1px solid #1C3374;
+  }
+
+  &:disabled,
+  &--disabled {
+    border: 1px solid rgba(2, 102, 193, 0.10);
+  }
+}
+
+.form-block__input input[aria-invalid] {
+  border-bottom: 1px solid #FF121F;
+}

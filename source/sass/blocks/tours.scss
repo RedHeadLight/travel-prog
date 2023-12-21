@@ -18,6 +18,9 @@
   display: flex;
 }
 
+.tours__order-button svg {
+  fill: #FFF;
+}
 .tours__order-button {
   display: block;
   margin: auto;
@@ -28,6 +31,31 @@
 
   @media (max-width: $mobile) {
     @include big-buttons;
+  }
+
+  &:hover, &:focus {
+    color: #1C3374;
+
+    svg {
+      fill: #1C3374;
+    }
+  }
+
+  &:active {
+    color: #0266C1;
+
+    svg {
+      fill: #0266C1;
+    }
+  }
+
+  &:disabled,
+  &--disabled {
+    color: #0266C1;
+
+    svg {
+      display: none;
+    }
   }
 }
 

@@ -1,3 +1,7 @@
+.slider-buttons__item svg {
+  fill: #FFF;
+}
+
 .slider-buttons__item {
   width: 37px;
   height: 35px;
@@ -13,4 +17,39 @@
   @media (max-width: $mobile) {
     margin-right: 10px;
   }
+
+
+  &:hover, &:focus {
+    border: 1px solid #1C3374;
+    background-color: #FFF;
+
+    svg {
+      fill: #1C3374;
+    }
+  }
+
+  &:active {
+    background-color: #1C3374;
+
+    svg {
+      fill: #FFF;
+    }
+  }
+
+  &:disabled,
+  &--disabled {
+    background-color: #999999;
+    color: #FFF;
+    border: none;
+
+    svg {
+      fill: #FFF;
+    }
+  }
+}
+
+.slider-buttons {
+  display: flex;
+  gap: 10px;
+  align-items: center;
 }
