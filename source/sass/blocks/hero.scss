@@ -16,7 +16,7 @@
   }
 }
 
-.hero__title {
+.hero__container h1 {
   @include huge-title;
   margin-bottom: 25px;
   color: #FFF;
