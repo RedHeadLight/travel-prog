@@ -23,17 +23,16 @@
   margin: 0;
   margin-top: 293PX;
   margin-bottom: 20px;
+  @include small-title;
   color: #FFF;
 
   @media (max-width: $tablet) {
-    @include small-title;
     margin-top: 186px;
     margin-bottom: 25px;
     color: #FFF;
   }
 
   @media (max-width: $mobile) {
-    @include small-title;
     margin-top: 174px;
   }
 }
@@ -61,7 +60,6 @@
   color: #FFF;
 
   @media (max-width: $mobile) {
-    @include extrasmall-text;
     margin-bottom: 20px;
   }
 }

@@ -20,11 +20,15 @@
 }
 
 .learning-slider__item {
+  flex-shrink: 0;
+  width: calc((100% - 60px) / 4);
 
   @media (max-width: $mobile) {
     padding: 15px;
   }
-}.learning-slider__item div {
+}
+
+.learning-slider__item div {
   display: flex;
   justify-content: space-between;
 }

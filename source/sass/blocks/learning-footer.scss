@@ -39,6 +39,13 @@
     }
   }
 
+  &:nth-last-child(1), &:nth-last-child(2) {
+    &::after {
+      bottom: initial;
+      top: -20px;
+    }
+  }
+
   &::before {
     content: "";
     width: 100%;
@@ -50,12 +57,7 @@
 
 
     @media (max-width: $tablet) {
-      width: 145%;
-      top: 83px;
-    }
-
-    @media (max-width: $mobile) {
-      display: none;
+    display: none;
     }
   }
 }
@@ -74,6 +76,19 @@
       position: absolute;
       top: 13px;
       left: -26px;
+    }
+  }
+
+  &::before {
+    @media (max-width: $tablet) {
+      content: "";
+      width: 345px;
+      height: 56px;
+      border: 1px solid rgba(2, 102, 193, 0.1);
+      border-left: none;
+      position: absolute;
+      left: 0;
+      top: 0;
     }
   }
 }

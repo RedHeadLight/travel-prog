@@ -13,30 +13,44 @@
 }
 
 .learning-item__social-link svg {
-  fill: #2D383F;
   background-color: #fff;
 }
 
-.learning-item__social-link svg {
+.learning-item__social-link path {
+  fill: #2D383F;
+}
+
+.learning-item__social-link {
+  rect {
+    stroke: #2D383F;
+    opacity: 0.3;
+  }
 
   &:hover, &:focus {
-    border: 1px solid #2D383F;
-    background-color: #fff;
+    rect {
+      stroke: #2D383F;
+      opacity: 1;
+    }
   }
 
   &:active {
-    background-color: #0266C1;
+    rect {
+      fill: #0266C1;
+    }
 
-    svg {
+    path {
       fill: #FFF;
     }
   }
 
   &:disabled,
   &--disabled {
-    background-color: #fff;
+    rect {
+      fill: #fff;
+      opacity: 1;
+    }
 
-    svg {
+    path {
       fill: #999999;
     }
   }
