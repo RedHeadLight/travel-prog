@@ -1,13 +1,12 @@
-.reviews {
+.reviews__container {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1440px;
   padding: 30px 120px 20px 120px;
 
   @media (max-width: $mobile) {
     padding: 30px 15px;
   }
-}
-
-.reviews__container {
-  padding: 0;
 }
 
 .reviews__cover {
@@ -21,6 +20,5 @@
   @media (max-width: $mobile) {
     margin: 0;
     margin-bottom: 15px;
-    @include small-title;
   }
 }

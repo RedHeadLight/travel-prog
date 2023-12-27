@@ -1,5 +1,10 @@
-.footer {
+.footer__container {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1440px;
   padding: 32px 120px;
+  display: grid;
+  justify-items: center;
 
   @media (max-width: $tablet) {
     padding: 40px 0 20px 0;
@@ -8,12 +13,6 @@
   @media (max-width: $mobile) {
     padding: 23px 15px 20px 15px;
   }
-}
-
-.footer__container {
-  padding: 0;
-  display: grid;
-  justify-items: center;
 }
 
 .footer__wrapper {

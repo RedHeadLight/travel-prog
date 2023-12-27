@@ -11,6 +11,15 @@
   }
 }
 
+.menu-nav--opened {
+  padding: 50px 45px 70px 45px;
+  display: grid;
+  gap: 26px;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
 .menu-nav__item {
   color: #FFFFFF;
 

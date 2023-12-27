@@ -1,15 +1,14 @@
-.features {
-  // padding: 42px 120px 81px 120px;
-  padding: 42px 0 81px 0;
+.features__container {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1440px;
+   // padding: 42px 120px 81px 120px;
+   padding: 42px 0 81px 0;
+  display: grid;
 
   @media (max-width: $mobile) {
     padding: 40px 15px;
   }
-}
-
-.features__container {
-  padding: 0;
-  display: grid;
 }
 
 .features__title {

@@ -8,4 +8,8 @@
 .hero-footer {
   display: flex;
   gap: 10px;
+
+  @media (max-width: $tablet) {
+    display: none;
+  }
 }

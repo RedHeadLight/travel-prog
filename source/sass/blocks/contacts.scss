@@ -1,13 +1,13 @@
-.contacts {
+.contacts__container {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1440px;
   padding: 65px 120px 95px 120px;
+
 
   @media (max-width: $tablet) {
     padding: 40px 0;
   }
-}
-
-.contacts__container {
-  padding: 0;
 }
 
 .contacts__title {

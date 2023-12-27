@@ -1,0 +1,31 @@
+.item-footer__stars {
+
+  @media (max-width: $tablet) {
+    display: flex;
+    gap: 1px;
+  }
+}
+
+.item-footer__title {
+  @include small-caption;
+  color: #FFFF;
+}
+
+.item-footer__subtitle {
+  @include big-caption;
+  color: #FFFF;
+
+  @media (max-width: $tablet) {
+    font-size: 13px;
+    line-height: 13px;
+    margin-top: 0;
+  }
+}
+
+.item-footer--beluha {
+  gap: 23px;
+}
+
+.item-footer--beluha:nth-child(1) {
+  margin-left: 13px;
+}

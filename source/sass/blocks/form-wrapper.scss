@@ -47,3 +47,12 @@
 .form-block__input input[aria-invalid] {
   border-bottom: 1px solid #FF121F;
 }
+
+.form-wrapper__item input:hover::placeholder {
+  color: #0266C1;
+}
+
+.form-wrapper__item input:disabled::placeholder {
+  color: #2D383F;
+  opacity: 0.3;
+}

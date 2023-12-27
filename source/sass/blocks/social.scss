@@ -1,14 +1,19 @@
-.social__link svg {
+.social__link path {
   fill: #2D383F;
 }
 
 .social__link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
 
   &:hover, &:focus {
     border: 1px solid #1C3374;
     background-color: #FFF;
 
-    svg {
+    path {
       fill: #1C3374;
     }
   }
@@ -16,7 +21,7 @@
   &:active {
     background-color: #1C3374;
 
-    svg {
+    path {
       fill: #FFF;
     }
   }

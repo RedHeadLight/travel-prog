@@ -1,4 +1,7 @@
-.tours {
+.tours__container {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1440px;
   padding: 100px 120px;
 
   @media (max-width: $tablet) {
@@ -10,16 +13,17 @@
   }
 }
 
-.tours__container {
-  padding: 0;
-}
-
 .tours__wrapper {
   display: flex;
 }
 
 .tours__order-button svg {
   fill: #FFF;
+  margin-left: 12px;
+
+  @media (max-width: $tablet) {
+    margin-left: 10px;
+  }
 }
 .tours__order-button {
   display: block;
@@ -29,15 +33,16 @@
   @include big-buttons;
   text-transform: uppercase;
 
-  @media (max-width: $mobile) {
-    @include big-buttons;
+  @media (max-width: $tablet) {
+    font-size: 17px;
+    margin-top: -65px;
   }
 
   &:hover, &:focus {
     color: #1C3374;
 
     svg {
-      fill: #1C3374;
+      stroke: #1C3374;
     }
   }
 
@@ -45,7 +50,7 @@
     color: #0266C1;
 
     svg {
-      fill: #0266C1;
+      stroke: #0266C1;
     }
   }
 
@@ -59,10 +64,6 @@
   }
 }
 
-.tours__order-button svg {
-  margin-left: 12px;
-}
-
 .tours__cover {
   display: flex;
   justify-content: space-between;
@@ -74,6 +75,20 @@
   gap: 10px;
   justify-content: space-between;
   align-items: center;
+
+  @media (max-width: $tablet) {
+    gap: 3px;
+  }
+}
+
+.tours__title {
+
+  @media (max-width: $tablet) {
+    margin-top: 22px;
+    margin-bottom: 23px;
+    font-size: 35px;
+  line-height: 35px;
+  }
 }
 
 .tours__title--fisht {
@@ -82,4 +97,8 @@
 
 .tours__title--beluha {
   width: 65%;
+
+  @media (max-width: $tablet) {
+    font-size: 26px;
+  }
 }

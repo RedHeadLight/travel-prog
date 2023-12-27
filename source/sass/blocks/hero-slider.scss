@@ -1,0 +1,81 @@
+.hero-slider {
+  position: relative;
+}
+
+.hero-slider__buttons {
+  display: flex;
+  gap: 16px;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+
+  @media (max-width: $tablet) {
+    right: 37px;
+    bottom: -192px;
+  }
+}
+
+.hero-slider__button {
+  width: 10px;
+  height: 11px;
+  border-radius: 100%;
+  border: 1px solid #FFF;
+  background-color: transparent;
+}
+
+.hero-slider__button--active {
+   background-color: #fff;
+}
+
+.hero-slider__slide {
+  position: relative;
+  left: 0;
+  bottom: 0;
+
+  @media (max-width: $tablet) {
+    width: 442px;
+    height: 300px;
+    left: 272px;
+    bottom: -29px;
+    margin-bottom: 152px;
+  }
+}
+
+
+.hero-play-button {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  z-index: 2;
+  width: 56px;
+  height: 56px;
+  border: 1px solid #FFF;
+  border-radius: 100%;
+
+  @media (max-width: $tablet) {
+    right: 44%;
+    bottom: 35%;
+  }
+
+  &:hover, &:focus {
+    border: none;
+  }
+
+  &:active {
+    background-color: #1C3374;
+  }
+
+  &:disabled,
+  &--disabled {
+    background-color: #0266C1;
+    opacity: 0.1;
+
+    svg {
+      fill: #0266C1;
+    }
+  }
+}
+
+.hero-slider__play-button svg {
+  fill: #FFF;
+}

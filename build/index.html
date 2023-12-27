@@ -19,13 +19,18 @@
 <body>
   <header class="header">
     <div class="container header__container">
-      <div class="header__icon-wrapper">
+      <button class="header__icon-wrapper icon-wrapper" type="button">
         <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 26 26" fill="none">
           <path d="M0 3.54541H26V5.71534H0V3.54541Z" fill="white" />
           <path d="M0 20.2846H26V22.4545H0V20.2846Z" fill="white" />
           <path d="M0 11.915H16.64V14.0849H0V11.915Z" fill="white" />
         </svg>
-      </div>
+      </button>
+      <button class="header__button-close button-close button-close--closed" type="button">
+        <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 26 26" fill="none">
+          <path d="M2.36365 2.36365L13 13M23.6364 23.6364L13 13M13 13L23.6364 2.36365L2.36365 23.6364" stroke="#FFFFFF" stroke-width="2"/>
+        </svg>
+      </button>
       <div class="header__wrapper">
         <a class="header__logo">
           <svg xmlns="http://www.w3.org/2000/svg" width="142" height="42" viewBox="0 0 142 42" fill="none">
@@ -98,19 +103,26 @@
   <main>
     <section class="hero">
       <div class="container hero__container">
-        <h1>Захватывающие вершины Кавказа</h1>
+        <h1>Захватывающие вершины Кавказа</h1>
         <p>В сопровождении опытных гидов вы пройдёте через потрясающие ландшафты и совершите восход на вершину горы
           Чегет.</p>
         <a class="hero__button" href="#">Смотреть тур</a>
         <div class="hero__slider hero-slider">
           <div class="hero-slider__slide">
-            <iframe loading="lazy" width="" height="" src="" title=""
+            <iframe loading="lazy" width="482" height="317" src="./img/video-desktop.jpg" title="YouTube video player"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
               allowfullscreen></iframe>
-            <a class="video__play-button" href="https://www.youtube.com/watch?v=9TZXsZItgdw"
+            <a class="hero-slider__play-button hero-play-button" href="https://www.youtube.com/watch?v=9TZXsZItgdw"
               aria-label="Кнопка запуска видео.">
-              <!-- svgшки кнопок видео -->
+              <svg xmlns="http://www.w3.org/2000/svg" width="56" height="56" viewBox="0 0 56 56" fill="none">
+                <path d="M37 28L25 17V39L37 28Z" stroke="black"/>
+              </svg>
             </a>
+          </div>
+          <div class="hero-slider__buttons">
+            <button class="hero-slider__button hero-slider__button--active" type="button"></button>
+            <button class="hero-slider__button" type="button"></button>
+            <button class="hero-slider__button" type="button"></button>
           </div>
         </div>
         <div class="hero__footer hero-footer">
@@ -192,7 +204,7 @@
                   <span class="slider-item__point">3 ночи</span>
                 </div>
               </div>
-              <h2>Путешествие вокруг Эльбруса</h2>
+              <h2>Путешествие вокруг Эльбруса</h2>
               <div class="slider-item__points">
                 <div class="slider-item__footer item-footer">
                   <div class="item-footer__wrapper">
@@ -241,7 +253,7 @@
             </picture>
             <div class="slider-item__main-wrapper main-wrapper main-wrapper--beluha">
               <div class="slider-item__top">
-                <div class="slider-item__cover">
+                <div class="slider-item__cover slider-cover slider-cover--beluha">
                   <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16">
                     <use xlink:href="./img/sprite.svg#tours-location-icon"></use>
                   </svg>
@@ -260,8 +272,8 @@
                   <span class="slider-item__point">13 ночей</span>
                 </div>
               </div>
-              <h2 class="tours__title tours__title--beluha">Путь к подножию Белухи</h2>
-              <div class="slider-item__footer item-footer">
+              <h2 class="tours__title tours__title--beluha">Путь к подножию Белухи</h2>
+              <div class="slider-item__footer item-footer item-footer--beluha">
                 <div class="item-footer__wrapper">
                   <span class="item-footer__title">Сложность:</span>
                   <div class="item-footer__stars">
@@ -293,7 +305,7 @@
               </div>
             </div>
           </div>
-          <div class="tours-slider__item slider-item">
+          <div class="tours-slider__item slider-item slider-item--last">
             <picture>
               <source type="image/webp" media="(min-width: 1200px)"
                 srcset="./img/tours-fisht-desktop.webp, ./img/tours-fisht-desktop@2x.webp 2x" />
@@ -574,7 +586,7 @@
             srcset="./img/about-tablet.webp, ./img/about-tablet@2x.webp 2x" />
           <source type="image/webp" media="(min-width: 320px)"
             srcset="./img/about-mobile.webp, ./img/about-mobile@2x.webp 2x" />
-          <img src="img/about-desktop.jpg" width="808" height="474" alt="Баннер раздела о нас">
+          <img src="img/about-desktop.jpg" width="808" height="474">
         </picture>
         <div class="about__texts about-texts">
           <h2 class="about-texts__title title">О нас</h2>
@@ -944,7 +956,7 @@
               srcset="./img/map-tablet.webp, ./img/map-tablet@2x.webp 2x" />
             <source type="image/webp" media="(min-width: 320px)"
               srcset="./img/map-mobile.webp, ./img/map-mobile@2x.webp 2x" />
-            <img src="img/map-desktop.jpg" width="585" height="324" alt="карта расположения офиса">
+            <img src="img/map-desktop.jpg" width="585" height="324">
           </picture>
         </div>
       </div>
