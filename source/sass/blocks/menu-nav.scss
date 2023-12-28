@@ -1,9 +1,9 @@
 .menu-nav {
+  @include small-buttons;
   display: flex;
   margin: 0;
   padding: 0 0 0 25px;
   gap: 30px;
-  @include small-buttons;
   list-style-type: none;
 
   @media (max-width: $tablet) {
@@ -21,14 +21,15 @@
 }
 
 .menu-nav__item {
-  color: #FFFFFF;
+  color: #ffffff;
 
-  &:hover, &:focus {
-    border-bottom: 1px solid #FFF;
+  &:hover,
+  &:focus {
+    border-bottom: 1px solid #ffffff;
   }
 
   &:active {
-    outline: 1px solid #FFF;
+    outline: 1px solid #ffffff;
   }
 
   &:disabled,
@@ -36,4 +37,3 @@
     border: none;
   }
 }
-

@@ -1,19 +1,23 @@
 .features-slider {
-  display: flex;
-  gap: 30px;
   margin: 47px 0 50px;
 
   @media (max-width: $tablet) {
-    display: grid;
-    grid-template-columns: 324px 324px;
-    gap: 30px;
     margin: auto;
-  }
-
-  @media (max-width: $mobile) {
-    grid: none;
-    width: 100%;
-    justify-content: center;
   }
 }
 
+.features__slider-body {
+  @media (max-width: $tablet) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+  }
+
+  @media (max-width: $mobile) {
+    display: grid;
+    grid-template-columns: 100%;
+    gap: 15px;
+    width: 100%;
+  }
+}

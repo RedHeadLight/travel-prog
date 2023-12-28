@@ -1,5 +1,9 @@
 .learning {
   padding-top: 153px;
+
+  @media (max-width: $tablet) {
+    padding-top: 50px;
+  }
 }
 
 .learning__subtitle {

@@ -8,9 +8,6 @@
   @media (max-width: $tablet) {
     @include small-title;
   }
-
-  @media (max-width: $mobile) {
-  }
 }
 
 .contacts__texts-wrapper {
@@ -78,7 +75,6 @@
 }
 
 .contacts__requisites {
-
   @media (max-width: $tablet) {
     display: flex;
     gap: 40px;

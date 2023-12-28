@@ -5,14 +5,14 @@
 }
 
 .slider-buttons__item svg {
-  fill: #FFF;
+  fill: #ffffff;
 }
 
 .slider-buttons__item {
   width: 37px;
   height: 35px;
   padding: 17px 12px;
-  background-color: #0266C1;
+  background-color: #0266c1;
   display: flex;
   align-items: center;
 
@@ -25,31 +25,32 @@
   }
 
 
-  &:hover, &:focus {
-    border: 1px solid #1C3374;
-    background-color: #FFF;
+  &:hover,
+  &:focus {
+    outline: 1px solid #1c3374;
+    background-color: #ffffff;
 
     svg {
-      fill: #1C3374;
+      fill: #1c3374;
     }
   }
 
   &:active {
-    background-color: #1C3374;
+    background-color: #1c3374;
 
     svg {
-      fill: #FFF;
+      fill: #ffffff;
     }
   }
 
   &:disabled,
   &--disabled {
     background-color: #999999;
-    color: #FFF;
+    color: #ffffff;
     border: none;
 
     svg {
-      fill: #FFF;
+      fill: #ffffff;
     }
   }
 }

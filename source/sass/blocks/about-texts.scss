@@ -1,10 +1,11 @@
 .about-texts__wrapper b {
-  display: table;
   @include subtitle;
+  display: table;
   margin-bottom: 16px;
 
   @media (max-width: $tablet) {
     @include subtitle;
+    margin-bottom: 9px;
   }
 
   @media (max-width: $mobile) {
@@ -14,8 +15,8 @@
 }
 
 .about-texts__wrapper p {
-  margin: 12px 0 25px;
   @include regular-text;
+  margin: 12px 0 25px;
 }
 
 .about-texts__title {
@@ -24,6 +25,8 @@
 
   @media (max-width: $tablet) {
     @include small-title;
+    margin-bottom: 33px;
+    margin-left: 5px;
   }
 
   @media (max-width: $mobile) {

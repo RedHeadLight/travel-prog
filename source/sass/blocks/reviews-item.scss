@@ -12,15 +12,21 @@
 
 .reviews-item__texts p {
   margin: 0;
+
+  @media (max-width: $tablet) {
+    line-height: 19px;
+    margin-bottom: 6px;
+  }
 }
 
 .reviews-item__title {
+  @include big-caption;
   display: block;
   margin: 12px 0 4px;
-  @include big-caption;
 
   @media (max-width: $mobile) {
     @include big-caption;
+    margin-top: 24px;
   }
 }
 

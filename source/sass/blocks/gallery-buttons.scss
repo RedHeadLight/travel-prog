@@ -1,39 +1,40 @@
 .gallery-buttons__item svg {
-  fill: #FFF;
+  fill: #ffffff;
 }
 
 .gallery-buttons__item {
-  background-color: #0266C1;
+  background-color: #0266c1;
   width: 78px;
   height: 35px;
   padding: 17px 12px;
 
 
-  &:hover, &:focus {
-    border: 1px solid #1C3374;
-    background-color: #FFF;
+  &:hover,
+  &:focus {
+    border: 1px solid #1c3374;
+    background-color: #ffffff;
 
     svg {
-      fill: #1C3374;
+      fill: #1c3374;
     }
   }
 
   &:active {
-    background-color: #1C3374;
+    background-color: #1c3374;
 
     svg {
-      fill: #FFF;
+      fill: #ffffff;
     }
   }
 
   &:disabled,
   &--disabled {
     background-color: #999999;
-    color: #FFF;
+    color: #ffffff;
     border: none;
 
     svg {
-      fill: #FFF;
+      fill: #ffffff;
     }
   }
 }

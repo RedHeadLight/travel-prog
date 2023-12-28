@@ -1,20 +1,36 @@
 .form {
-  background-image: url(../img/form-background-desktop.jpg);
+  background-image: url("../img/form-background-desktop.jpg");
   background-size: cover;
   padding: 295px 0 293px;
 }
 
 .form__container {
   max-width: 1040px;
+
+  @media (max-width: $tablet) {
+    max-width: 390px;
+  }
+}
+
+.form form {
+  @media (max-width: $tablet) {
+    max-width: 270px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  @media (max-width: $mobile) {
+    max-width: 290px;
+  }
 }
 
 .form__texts h2 {
-  margin: 0 0 18px;
   @include small-title;
-  color: #FFF;
+  margin: 0 0 18px;
+  color: #ffffff;
 
   @media (max-width: $tablet) {
-    color: #FFF;
+    color: #ffffff;
   }
 }
 
@@ -39,7 +55,7 @@
 
 .form__texts span {
   @include smaller-text;
-  color: #FFF;
+  color: #ffffff;
 
   @media (max-width: $mobile) {
     margin-bottom: 20px;

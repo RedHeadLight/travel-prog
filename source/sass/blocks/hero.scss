@@ -24,7 +24,7 @@
   @include huge-title;
   margin: 0;
   max-width: 780px;
-  color: #FFF;
+  color: #ffffff;
 
   @media (max-width: $tablet) {
     margin-top: 73px;
@@ -36,7 +36,7 @@
   @include text;
   margin: 23px 0 0;
   max-width: 420px;
-  color: #FFF;
+  color: #ffffff;
 
   @media (max-width: $tablet) {
     max-width: 500px;
@@ -46,7 +46,7 @@
 
   @media (max-width: $mobile) {
     @include text;
-    color: #FFF;
+    color: #ffffff;
     margin-bottom: 60px;
   }
 }
@@ -55,9 +55,9 @@
   display: table;
   width: 180px;
   margin-top: 38px;
-  background-color: #0266C1;
+  background-color: #0266c1;
   padding: 20px 10px;
-  color: #FFF;
+  color: #ffffff;
   margin-bottom: 134px;
   font-size: 16px;
   font-style: normal;
@@ -67,7 +67,7 @@
 
   @media (max-width: $tablet) {
     @include medium-buttons;
-    color: #FFF;
+    color: #ffffff;
     text-transform: none;
     width: 180px;
     display: block;
@@ -76,29 +76,26 @@
 
   @media (max-width: $tablet) {
     @include medium-buttons;
-    color: #FFF;
+    color: #ffffff;
   }
 
-  &:hover, &:focus {
-    border: 1px solid #1C3374;
-    background-color: #FFF;
-    color: #1C3374;
+  &:hover,
+  &:focus {
+    border: 1px solid #1c3374;
+    background-color: #ffffff;
+    color: #1c3374;
   }
 
   &:active {
-    background-color: #1C3374;
+    background-color: #1c3374;
   }
 
   &:disabled,
   &--disabled {
     background-color: #999999;
-    color: #FFF;
+    color: #ffffff;
     border: none;
   }
-}
-
-.hero__slider {
-
 }
 
 .hero__footer {

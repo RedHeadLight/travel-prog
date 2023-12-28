@@ -1,5 +1,6 @@
 .features {
   padding: 76px 0;
+  overflow: hidden;
 }
 
 .features__title {
@@ -9,6 +10,10 @@
   font-weight: 800;
   line-height: 100%;
   text-align: center;
+
+  @media (max-width: $tablet) {
+    margin-top: 49px;
+  }
 }
 
 .features__btns {

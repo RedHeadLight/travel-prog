@@ -1,5 +1,5 @@
 .social__link path {
-  fill: #2D383F;
+  fill: #2d383f;
 }
 
 .social__link {
@@ -9,20 +9,21 @@
   width: 30px;
   height: 30px;
 
-  &:hover, &:focus {
-    border: 1px solid #1C3374;
-    background-color: #FFF;
+  &:hover,
+  &:focus {
+    border: 1px solid #1c3374;
+    background-color: #ffffff;
 
     path {
-      fill: #1C3374;
+      fill: #1c3374;
     }
   }
 
   &:active {
-    background-color: #1C3374;
+    background-color: #1c3374;
 
     path {
-      fill: #FFF;
+      fill: #ffffff;
     }
   }
 }

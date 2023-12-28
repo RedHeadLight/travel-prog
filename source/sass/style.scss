@@ -3,7 +3,7 @@
 
 @import "vendor/normalize";
 // Swiper 8.4.7
-// @import "vendor/swiper";
+@import "vendor/swiper";
 
 // Global
 // ---------------------------------
@@ -59,7 +59,7 @@
 @import "blocks/hero-slider.scss";
 @import "blocks/icon-wrapper.scss";
 @import "blocks/item-footer.scss";
-@import "blocks/slider-cover.scss";
+@import "blocks/features-icon.scss";
 
 body {
   overflow-x: hidden;

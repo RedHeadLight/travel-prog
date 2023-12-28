@@ -1,9 +1,14 @@
 .gallery {
   padding-top: 5px;
+  overflow: hidden;
 }
 
 .gallery__texts {
   margin-bottom: 46px;
+
+  @media (max-width: $tablet) {
+    margin-bottom: 21px;
+  }
 }
 
 .gallery__title {
@@ -41,31 +46,12 @@
 }
 
 .gallery-block {
-  display: flex;
+  display: inline-flex;
+  width: auto;
   gap: 5px;
 }
 
 .gallery-block img {
   display: block;
-}
-
-.gallery-block--last {
-
-  @media (max-width: $tablet) {
-    display: none;
-  }
-}
-
-.gallery-block--secondary {
-
-  @media (max-width: $mobile) {
-    display: none;
-  }
-}
-
-.gallery__texts {
-
-  @media (max-width: $tablet) {
-    margin-bottom: 21px;
-  }
+  object-fit: cover;
 }
