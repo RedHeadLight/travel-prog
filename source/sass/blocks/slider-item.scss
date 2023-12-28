@@ -1,27 +1,20 @@
 .slider-item__cover {
   background-color: #0266C1;
-  width: 94px;
   padding: 6px 12px;
   display: flex;
   gap: 6px;
   @include medium-caption;
   color: #FFF;
-  margin-bottom: 15px;
-  margin-right: 27px;
-
-  @media (max-width: $tablet) {
-    margin-right: 42px;
-  }
+  margin-right: auto;
 }
 
 .slider-item h2 {
   @include item-title;
   color: #FFF;
-  margin: 0;
-  margin-bottom: 30px;
+  margin: 0 0 22px;
 
   @media (max-width: $tablet) {
-    font-size: 27px;
+    margin-top: 14px;
     margin-bottom: 23px;
   }
 }
@@ -37,8 +30,12 @@
 
 .slider-item__wrapper {
   display: flex;
+  align-items: center;
   gap: 12px;
-  margin-right: 14px;
+
+  & + & {
+    margin-left: 14px;
+  }
 }
 
 .slider-item__point {
@@ -53,12 +50,12 @@
 
 .slider-item__footer {
   display: flex;
-  gap: 30px;
 }
 
 .slider-item__main-wrapper {
   position: absolute;
-  top: 105px;
+  width: 100%;
+  bottom: 0;
   left: 0;
   padding: 30px 20px;
 
@@ -71,29 +68,9 @@
   position: relative;
 }
 
-.main-wrapper--fisht {
-  top: 73px;
-}
-
-.main-wrapper--beluha {
-  top: 71px;
-
-  @media (max-width: $tablet) {
-    width: 100%;
-    top: 195px;
-  }
-}
-
 .slider-item--last {
 
   @media (max-width: $tablet) {
     display: none;
-  }
-}
-
-.slider-cover--beluha {
-
-  @media (max-width: $tablet) {
-    margin-right: 24px;
   }
 }

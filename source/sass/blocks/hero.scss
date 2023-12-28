@@ -1,27 +1,29 @@
 .hero {
   background-image: url("../img/hero-background-desktop.jpg");
+  background-size: cover;
   position: relative;
+  padding: 200px 0 81px;
+
+  @media (max-width: $tablet) {
+    padding-top: 138px;
+    padding-bottom: 40px;
+  }
 }
 
 .hero__container {
   margin: 0 auto;
   width: 100%;
-  max-width: 1440px;
-  padding: 200px 120px 80px 120px;
+  position: relative;
 
   @media (max-width: $tablet) {
     text-align: center;
-    padding: 200px 100px 80px 100px;
-  }
-
-  @media (max-width: $mobile) {
-    padding: 40px 15px;
   }
 }
 
 .hero__container h1 {
   @include huge-title;
-  margin-bottom: 25px;
+  margin: 0;
+  max-width: 780px;
   color: #FFF;
 
   @media (max-width: $tablet) {
@@ -32,15 +34,14 @@
 
 .hero__container p {
   @include text;
-  margin-bottom: 35px;
-  width: 40%;
+  margin: 23px 0 0;
+  max-width: 420px;
   color: #FFF;
 
   @media (max-width: $tablet) {
-    display: block;
+    max-width: 500px;
     margin: auto;
     margin-bottom: 25px;
-    width: 93%;
   }
 
   @media (max-width: $mobile) {
@@ -51,13 +52,18 @@
 }
 
 .hero__button {
+  display: table;
   width: 180px;
+  margin-top: 38px;
   background-color: #0266C1;
-  padding: 20px;
-  text-transform: uppercase;
-  @include big-buttons;
+  padding: 20px 10px;
   color: #FFF;
   margin-bottom: 134px;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 16px;
+  text-align: center;
 
   @media (max-width: $tablet) {
     @include medium-buttons;
@@ -92,21 +98,10 @@
 }
 
 .hero__slider {
-  position: absolute;
-  top: 53%;
-  right: 62px;
 
-  @media (max-width: $tablet) {
-    right: 37%;
-    top: 71%;
-  }
 }
 
 .hero__footer {
-  margin-top: 134px;
-}
-
-.hero-footer__wrapper span {
-  @include extrasmall-text;
-  color: #FFF;
+  grid-column: 1/2;
+  grid-row: 2/3;
 }

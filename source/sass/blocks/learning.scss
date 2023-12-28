@@ -1,3 +1,16 @@
+.learning {
+  padding-top: 153px;
+}
+
+.learning__subtitle {
+  @include subtitle;
+  margin: 0;
+
+  @media (max-width: $tablet) {
+    font-size: 21px;
+  }
+}
+
 .learning__container {
   margin: 0 auto;
   width: 100%;
@@ -5,7 +18,7 @@
   padding: 0 120px;
 
   @media (max-width: $tablet) {
-    padding: 90px 45px 50px 45px;
+    padding: 65px 45px 50px 45px;
   }
 
   @media (max-width: $mobile) {
@@ -13,24 +26,22 @@
   }
 }
 
-.learning__container span {
+.learning__wrapper span {
   @include smaller-text;
-  margin-bottom: 56px;
+  display: table;
+  margin: 20px 0 0;
 
   @media (max-width: $tablet) {
-    width: 83%;
     display: block;
-    letter-spacing: 1px;
+    width: 80%;
   }
 }
 
 .learning__title {
-  margin-bottom: 38px;
+  margin: 0;
 
   @media (max-width: $tablet) {
     font-size: 25px;
-    margin-bottom: 4px;
-    margin-top: 1px;
   }
 
   @media (max-width: $mobile) {
@@ -38,22 +49,16 @@
   }
 }
 
-.learning__footer {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
+.learning__cover {
   display: flex;
-  margin-top: 56px;
+  justify-content: space-between;
+  margin-top: 32px;
+}
 
-  @media (max-width: $tablet) {
-    grid-template-columns: 208px 208px;
-    display: grid;
-    gap: 91px 136px;
-    margin: 0 auto;
-  }
+.learning__buttons {
+  margin-top: 15px;
+}
 
-  @media (max-width: $mobile) {
-    grid: none;
-    gap: 25px;
-  }
+.learning__slider {
+  margin-top: 20px;
 }

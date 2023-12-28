@@ -1,5 +1,4 @@
 .reviews-item__texts {
-  width: 40%;
   @include regular-text;
 
   @media (max-width: $tablet) {
@@ -11,7 +10,13 @@
   }
 }
 
+.reviews-item__texts p {
+  margin: 0;
+}
+
 .reviews-item__title {
+  display: block;
+  margin: 12px 0 4px;
   @include big-caption;
 
   @media (max-width: $mobile) {
@@ -20,6 +25,9 @@
 }
 
 .reviews-item__subtitle {
+  font-size: 12px;
+  font-weight: 300;
+  line-height: 100%;
 
   @media (max-width: $mobile) {
     @include small-caption;

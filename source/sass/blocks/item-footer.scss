@@ -12,20 +12,25 @@
 }
 
 .item-footer__subtitle {
+  margin: 0;
   @include big-caption;
   color: #FFFF;
 
   @media (max-width: $tablet) {
     font-size: 13px;
     line-height: 13px;
-    margin-top: 0;
   }
 }
 
-.item-footer--beluha {
-  gap: 23px;
+.item-footer__stars {
+  display: flex;
+  gap: 1px;
 }
 
-.item-footer--beluha:nth-child(1) {
-  margin-left: 13px;
+.item-footer__stars svg {
+  display: block;
+}
+
+.item-footer__wrapper {
+  margin-right: 28px;
 }

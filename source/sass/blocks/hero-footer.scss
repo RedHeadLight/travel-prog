@@ -1,8 +1,6 @@
 .hero-footer__button {
-  padding: 14px 20px;
-  width: 155px;
   @include extrasmall-text;
-  // color: #FFF;
+  color: #FFF;
 }
 
 .hero-footer {
@@ -11,5 +9,16 @@
 
   @media (max-width: $tablet) {
     display: none;
+  }
+}
+
+.hero-footer__wrapper {
+  border: 1px solid rgba(255, 255, 255, 0.50);
+  padding: 12px 20px;
+  display: flex;
+  align-items: center;
+
+  svg {
+    margin-right: 8px;
   }
 }

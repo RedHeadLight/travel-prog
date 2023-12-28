@@ -77,146 +77,89 @@
 // шрифтовые миксины
 //заголовки
 @mixin huge-title {
-  font-family: 'Monserrat', Arial, sans-serif;
   font-size: 77px;
-  font-style: normal;
   font-weight: 800;
-  line-height: 77px;
+  line-height: 1;
 
   @media (max-width: $tablet) {
-    font-family: 'Monserrat', Arial, sans-serif;
     font-size: 56px;
-    font-style: normal;
-    font-weight: 800;
-    line-height: 56px;
   }
 
   @media (max-width: $mobile) {
-    font-family: 'Monserrat', Arial, sans-serif;
     font-size: 30px;
-    font-style: normal;
-    font-weight: 800;
-    line-height: 30px;
   }
 }
 
 @mixin title {
-  font-family: 'Monserrat', Arial, sans-serif;
   font-size: 55px;
-  font-style: normal;
   font-weight: 800;
-  line-height: 55px;
+  line-height: 1;
   color: #2D383F;
 
   @media (max-width: $mobile) {
-    font-family: 'Monserrat', Arial, sans-serif;
     font-size: 26px;
-    font-style: normal;
-    font-weight: 800;
-    line-height: 26px;
-    color: #2D383F;
   }
 }
 
 @mixin small-title {
-  font-family: 'Monserrat', Arial, sans-serif;
   font-size: 35px;
-  font-style: normal;
   font-weight: 800;
-  line-height: 35px;
+  line-height: 1;
   color: #2D383F;
 
   @media (max-width: $tablet) {
-    font-family: 'Monserrat', Arial, sans-serif;
     font-size: 25px;
-    font-style: normal;
-    font-weight: 800;
-    line-height: 25px;
-    color: #2D383F;
   }
 
   @media (max-width: $mobile) {
-    font-family: 'Monserrat', Arial, sans-serif;
     font-size: 22px;
-    font-style: normal;
-    font-weight: 800;
-    line-height: 22px;
-    color: #2D383F;
   }
 }
 
 @mixin item-title {
-  font-family: 'Monserrat', Arial, sans-serif;
   font-size: 24px;
-  font-style: normal;
   font-weight: 700;
   line-height: 28px;
   color: #2D383F;
 
   @media (max-width: $mobile) {
-    font-family: 'Monserrat', Arial, sans-serif;
     font-size: 20px;
-    font-style: normal;
-    font-weight: 700;
     line-height: 24px;
-    color: #2D383F;
   }
 }
 
 @mixin subtitle {
-  font-family: 'Monserrat', Arial, sans-serif;
   font-size: 21px;
-  font-style: normal;
   font-weight: 700;
-  line-height: 21px;
+  line-height: 1;
   color: #2D383F;
 
   @media (max-width: $tablet) {
-    font-family: 'Monserrat', Arial, sans-serif;
     font-size: 18px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 18px;
-    color: #2D383F;
   }
 
   @media (max-width: $mobile) {
-    font-family: 'Monserrat', Arial, sans-serif;
     font-size: 16px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 16px;
-    color: #2D383F;
   }
 }
 
 @mixin semibold {
-  font-family: 'Monserrat', Arial, sans-serif;
   font-size: 18px;
-  font-style: normal;
   font-weight: 600;
-  line-height: 18px;
+  line-height: 1;
   color: #2D383F;
 
   @media (max-width: $tablet) {
-    font-family: 'Monserrat', Arial, sans-serif;
     font-size: 16px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: 16px;
-    color: #2D383F;
   }
 
   @media (max-width: $mobile) {
     font-size: 14px;
-    line-height: 14px;
   }
 }
 
 @mixin smallbold {
-  font-family: 'Monserrat', Arial, sans-serif;
   font-size: 14px;
-  font-style: normal;
   font-weight: 700;
   line-height: 16px;
   color: #2D383F;
@@ -224,18 +167,14 @@
 
 
 @mixin text {
-  font-family: 'Monserrat', Arial, sans-serif;
   font-size: 17px;
-  font-style: normal;
   font-weight: 400;
   line-height: 24px;
   color: #2D383F;
 }
 
 @mixin smaller-text {
-  font-family: 'Monserrat', Arial, sans-serif;
   font-size: 16px;
-  font-style: normal;
   font-weight: 400;
   line-height: 24px;
   color: #2D383F;
@@ -247,18 +186,14 @@
 }
 
 @mixin regular-text {
-  font-family: 'Monserrat', Arial, sans-serif;
   font-size: 14px;
-  font-style: normal;
   font-weight: 400;
   line-height: 22px;
   color: #2D383F;
 }
 
 @mixin extrasmall-text {
-  font-family: 'Monserrat', Arial, sans-serif;
   font-size: 12px;
-  font-style: normal;
   font-weight: 400;
   line-height: 16px;
   color: #2D383F;
@@ -269,118 +204,58 @@
 }
 
 @mixin big-caption {
-  font-family: 'Monserrat', Arial, sans-serif;
   font-size: 13px;
-  font-style: normal;
   font-weight: 700;
-  line-height: 13px;
+  line-height: 1;
   color: #2D383F;
 }
 
 @mixin medium-caption {
-  font-family: 'Monserrat', Arial, sans-serif;
   font-size: 12px;
-  font-style: normal;
   font-weight: 500;
-  line-height: 12px;
+  line-height: 1;
   color: #2D383F;
 
   @media (max-width: $mobile) {
     font-size: 12px;
-    line-height: 12px;
   }
 }
 
 
 @mixin small-caption {
-  font-family: 'Monserrat', Arial, sans-serif;
   font-size: 12px;
-  font-style: normal;
   font-weight: 300;
-  line-height: 12px;
+  line-height: 1;
   color: #2D383F;
 }
 
 @mixin big-buttons{
-  font-family: 'Monserrat', Arial, sans-serif;
   font-size: 16px;
-  font-style: normal;
   font-weight: 700;
-  line-height: 16px;
+  line-height: 1;
   letter-spacing: 0.64px;
   text-transform: uppercase;
   color: #2D383F;
 
   @media (max-width: $mobile) {
     font-size: 14px;
-    line-height: 14px;
   }
 }
 
 @mixin medium-buttons {
-  font-family: 'Monserrat', Arial, sans-serif;
   font-size: 16px;
-  font-style: normal;
   font-weight: 500;
-  line-height: 16px;
+  line-height: 1;
   color: #2D383F;
 }
 
 @mixin small-buttons {
-  font-family: 'Monserrat', Arial, sans-serif;
   font-size: 16px;
-  font-style: normal;
   font-weight: 400;
-  line-height: 16px;
+  line-height: 1;
   color: #2D383F;
 
   @media (max-width: $tablet) {
     font-size: 14px;
-    line-height: 14px;
   }
 }
-
-
-// M
-// Mobile first
-
-// @mixin vp-375 {
-//   @media (min-width: $vp-375) {
-//     @content;
-//   }
-// }
-
-// @mixin vp-768 {
-//   @media (min-width: $vp-768) {
-//     @content;
-//   }
-// }
-
-// @mixin vp-1024 {
-//   @media (min-width: $vp-1024) {
-//     @content;
-//   }
-// }
-
-// @mixin vp-1280 {
-//   @media (min-width: $vp-1280) {
-//     @content;
-//   }
-// }
-
-// @mixin vp-1440 {
-//   @media (min-width: $vp-1440) {
-//     @content;
-//   }
-// }
-
-// @mixin vp-1920 {
-//   @media (min-width: $vp-1920) {
-//     @content;
-//   }
-// }
-
-// ---------------------------------
-
-// не нужно добавлять свои миксины для ресета списков, обнуления кнопок и прочие
-// этим вы усложняете работу команды, проверку вашего кода и будущую поддержку проекта

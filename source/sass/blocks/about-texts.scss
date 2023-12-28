@@ -1,6 +1,7 @@
 .about-texts__wrapper b {
+  display: table;
   @include subtitle;
-  margin-bottom: 20px;
+  margin-bottom: 16px;
 
   @media (max-width: $tablet) {
     @include subtitle;
@@ -13,7 +14,7 @@
 }
 
 .about-texts__wrapper p {
-  margin-bottom: 25px;
+  margin: 12px 0 25px;
   @include regular-text;
 }
 

@@ -4,20 +4,22 @@
 
 .hero-slider__buttons {
   display: flex;
-  gap: 16px;
+  gap: 20px;
   position: absolute;
-  right: 0;
-  bottom: 0;
+  right: 40px;
+  bottom: 16px;
 
   @media (max-width: $tablet) {
-    right: 37px;
-    bottom: -192px;
+    position: static;
+    margin: 132px auto 0;
+    justify-content: center;
   }
 }
 
 .hero-slider__button {
   width: 10px;
-  height: 11px;
+  height: 10px;
+  padding: 0;
   border-radius: 100%;
   border: 1px solid #FFF;
   background-color: transparent;
@@ -29,23 +31,47 @@
 
 .hero-slider__slide {
   position: relative;
-  left: 0;
-  bottom: 0;
+  display: grid;
+  align-items: flex-start;
+  grid-template-columns: 1fr 62px 420px;
+  grid-template-rows: min-content min-content;
 
   @media (max-width: $tablet) {
-    width: 442px;
-    height: 300px;
-    left: 272px;
-    bottom: -29px;
-    margin-bottom: 152px;
+    display: block;
   }
 }
 
+.hero-slider__texts {
+  grid-column: 1/3;
+  grid-row: 1/2;
+  z-index: 1;
+}
+
+.hero-slider__media {
+  position: relative;
+  grid-column: 2/4;
+  grid-row: 1/3;
+  margin-top: 128px;
+
+  @media (max-width: $tablet) {
+    margin-top: 45px;
+  }
+
+  iframe {
+    border: none;
+
+    @media (max-width: $tablet) {
+      width: 442px;
+      height: 300px;
+    }
+  }
+}
 
 .hero-play-button {
   position: absolute;
-  right: 0;
-  bottom: 0;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
   z-index: 2;
   width: 56px;
   height: 56px;

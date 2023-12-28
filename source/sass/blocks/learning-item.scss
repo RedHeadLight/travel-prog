@@ -1,15 +1,32 @@
+.learning-item {
+  padding: 15px;
+  border: 1px solid rgba(2, 102, 193, 0.10);
+  background-color: #fff;
+}
+
 .learning-item__title {
   @include smallbold;
-  margin-bottom: 15px;
+  display: table;
+  max-width: 140px;
+  margin-top: 3px;
 }
 
 .learning-item p {
   @include extrasmall-text;
-  margin-bottom: 15px;
+  margin: 15px 0 0;
+
+  @media (max-width: $tablet) {
+    line-height: 16px;
+  }
 }
 
 .learning-item img {
   margin-bottom: 15px;
+}
+
+.learning-item__info {
+  display: flex;
+  justify-content: space-between;
 }
 
 .learning-item__social-link svg {

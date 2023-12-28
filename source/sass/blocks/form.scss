@@ -1,38 +1,20 @@
 .form {
   background-image: url(../img/form-background-desktop.jpg);
-  background-size: 100%;
+  background-size: cover;
+  padding: 295px 0 293px;
 }
 
 .form__container {
-  width: 960px;
-  margin: 0 auto;
-  display: grid;
-  margin: 0 auto;
-  width: 100%;
-  max-width: 1280px;
-  padding: 40px;
-
-  @media (max-width: $tablet) {
-    width: 40%;
-    padding: 40px 45px;
-  }
+  max-width: 1040px;
 }
 
 .form__texts h2 {
-  margin: 0;
-  margin-top: 293PX;
-  margin-bottom: 20px;
+  margin: 0 0 18px;
   @include small-title;
   color: #FFF;
 
   @media (max-width: $tablet) {
-    margin-top: 186px;
-    margin-bottom: 25px;
     color: #FFF;
-  }
-
-  @media (max-width: $mobile) {
-    margin-top: 174px;
   }
 }
 
@@ -46,6 +28,7 @@
 
 .form__wrapper {
   display: flex;
+  flex-wrap: wrap;
   gap: 30px;
   width: 100%;
 
@@ -65,13 +48,4 @@
 
 .form__container form {
   justify-items: center;
-  margin-bottom: 292px;
-
-  @media (max-width: $tablet) {
-    margin-bottom: 186px;
-  }
-
-  @media (max-width: $mobile) {
-    margin-bottom: 174px;
-  }
 }

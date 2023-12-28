@@ -1,7 +1,20 @@
+.about {
+  padding-top: 85px;
+  position: relative;
+}
+
 .about__container {
-  margin: 0 auto;
-  width: 100%;
-  max-width: 1320px;
-  padding: 58px 120px 0 0;
-  display: flex;
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+
+.about img {
+  position: absolute;
+  left: 0;
+  top: 60px;
+  z-index: -1;
+}
+
+.about__texts {
+  padding-left: 15px;
 }

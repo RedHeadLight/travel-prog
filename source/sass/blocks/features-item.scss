@@ -1,3 +1,23 @@
+.features-item {
+  width: 380px;
+  padding: 40px 20px;
+  display: grid;
+  border: 1px solid rgba(2, 102, 193, 0.10);
+  background: #FFF;
+  text-align: center;
+
+  @media (max-width: $tablet) {
+    padding: 30px 20px;
+  }
+
+
+  @media (max-width: $mobile) {
+    padding: 20px 10px;
+  }
+}
+
+
+
 .features-item span {
   margin: 0;
   @include semibold;
@@ -15,6 +35,7 @@
 
 .features-item p {
   @include regular-text;
+  margin: 0;
 
   @media (max-width: $mobile) {
     @include extrasmall-text;

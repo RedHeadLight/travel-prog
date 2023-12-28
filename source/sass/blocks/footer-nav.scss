@@ -1,11 +1,12 @@
 .footer-nav {
   list-style-type: none;
   padding: 0;
+  margin: -5px 0 0 -28px;
   display: flex;
   gap: 30px;
 
   @media (max-width: $tablet) {
-    margin-right: 45px;
+    margin: 0;
   }
 
   @media (max-width: $mobile) {

@@ -1,24 +1,19 @@
+.footer__tech {
+  border-top: 1px solid rgba(45, 56, 63, 0.20);
+  padding-top: 40px;
+}
+
 .footer__container {
-  margin: 0 auto;
-  width: 100%;
-  max-width: 1440px;
-  padding: 32px 120px;
   display: grid;
   justify-items: center;
-
-  @media (max-width: $tablet) {
-    padding: 40px 0 20px 0;
-  }
-
-  @media (max-width: $mobile) {
-    padding: 23px 15px 20px 15px;
-  }
+  align-items: center;
+  gap: 23px;
 }
 
 .footer__wrapper {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 22px;
+  align-items: center;
   width: 100%;
 
   @media (max-width: $mobile) {
@@ -32,7 +27,6 @@
   list-style-type: none;
   padding: 0;
   margin: 0 auto;
-  margin-bottom: 22px;
   display: flex;
   justify-content: center;
   gap: 15px;
@@ -44,7 +38,6 @@
 
 .footer__phone {
   @include semibold;
-  margin: auto;
 
   @media (max-width: $tablet) {
     display: none;
@@ -65,6 +58,7 @@
 }
 
 .footer__logo {
+  margin-left: 29px;
 
   @media (max-width: $tablet) {
     margin-left: 45px;

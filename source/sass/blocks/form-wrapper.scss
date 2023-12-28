@@ -1,3 +1,8 @@
+.form-wrapper__item {
+  width: 100%;
+  max-width: 360px;
+}
+
 .form-wrapper__item label{
   position: absolute;
 
@@ -16,19 +21,10 @@
 }
 
 .form-wrapper__item input {
-  padding: 20px 30px;
+  padding: 10px 30px;
+  height: 56px;
   width: 100%;
-}
-
-.form-wrapper__item {
-  width: 45%;
-
-  @media (max-width: $tablet) {
-    width: 100%;
-  }
-}
-
-.form-wrapper__item input {
+  border: none;
 
   &:hover {
     border: 1px solid #0266C1;
@@ -55,4 +51,35 @@
 .form-wrapper__item input:disabled::placeholder {
   color: #2D383F;
   opacity: 0.3;
+}
+
+.form-wrapper__button {
+  background-color: #0266C1;
+  padding: 20px 20px;
+  @include medium-buttons;
+  color: #FFF;
+  width: 180px;
+  border: none;
+
+  @media (max-width: $tablet) {
+    width: 100%;
+  }
+
+
+  &:hover, &:focus {
+    border: 1px solid #1C3374;
+    background-color: #FFF;
+    color: #1C3374;
+  }
+
+  &:active {
+    background-color: #1C3374;
+  }
+
+  &:disabled,
+  &--disabled {
+    background-color: #999999;
+    color: #FFF;
+    border: none;
+  }
 }

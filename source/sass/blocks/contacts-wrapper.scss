@@ -48,11 +48,15 @@
 
 .contacts-wrapper {
   display: flex;
-  gap: 110px;
+  gap: 115px;
   width: 100%;
 
   @media (max-width: $tablet) {
     display: grid;
     gap: 0;
   }
+}
+
+.contacts-wrapper img {
+  margin-top: 16px;
 }

@@ -1,16 +1,8 @@
-.gallery__container {
-  margin: 0 auto;
-  width: 100%;
-  max-width: 1440px;
-  padding: 125px 0 0 0;
-
-  @media (max-width: $mobile) {
-    padding: 0 15px;
-  }
+.gallery {
+  padding-top: 5px;
 }
 
 .gallery__texts {
-  margin: 0 120px;
   margin-bottom: 46px;
 }
 
@@ -50,6 +42,11 @@
 
 .gallery-block {
   display: flex;
+  gap: 5px;
+}
+
+.gallery-block img {
+  display: block;
 }
 
 .gallery-block--last {

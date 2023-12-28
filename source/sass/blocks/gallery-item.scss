@@ -1,3 +1,10 @@
 .gallery-item {
   display: flex;
+  gap: 5px;
+}
+
+.gallery-item__cover picture + picture,
+.gallery-item__cover img + img {
+  display: block;
+  margin-top: 5px;
 }

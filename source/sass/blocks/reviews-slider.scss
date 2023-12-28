@@ -1,11 +1,22 @@
 .reviews-slider {
   display: flex;
-  margin-bottom: 71px;
+  margin-top: 37px;
+  gap: 120px;
+  padding: 0 10px;
 }
 
 .reviews-slider__item {
+  width: 700px;
+  flex-shrink: 0;
   display: flex;
   gap: 30px;
+  padding: 20px 40px 20px 20px;
+  background-color: #fff;
+  box-shadow: 0px 0px 20px 0px rgba(28, 51, 116, 0.10);
+}
+
+.reviews-slider__item picture, .reviews-slider__item img {
+  flex-shrink: 0;
 }
 
 .reviews-slider__buttons {

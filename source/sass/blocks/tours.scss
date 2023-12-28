@@ -1,16 +1,10 @@
 .tours__container {
-  margin: 0 auto;
-  width: 100%;
-  max-width: 1440px;
-  padding: 100px 120px;
+  padding-top: 120px;
 
   @media (max-width: $tablet) {
-    padding: 45px;
+    padding-top: 45px;
   }
 
-  @media (max-width: $mobile) {
-    padding: 20px;
-  }
 }
 
 .tours__wrapper {
@@ -26,16 +20,21 @@
   }
 }
 .tours__order-button {
-  display: block;
-  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 63px auto 0;
   width: 237px;
-  padding: 10px;
   @include big-buttons;
   text-transform: uppercase;
 
   @media (max-width: $tablet) {
     font-size: 17px;
     margin-top: -65px;
+  }
+
+  svg {
+    margin-left: 12px;
   }
 
   &:hover, &:focus {
@@ -67,6 +66,7 @@
 .tours__cover {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   width: 100%;
 }
 
@@ -82,23 +82,12 @@
 }
 
 .tours__title {
+  margin: 0;
 
   @media (max-width: $tablet) {
     margin-top: 22px;
     margin-bottom: 23px;
     font-size: 35px;
   line-height: 35px;
-  }
-}
-
-.tours__title--fisht {
-  width: 71%;
-}
-
-.tours__title--beluha {
-  width: 65%;
-
-  @media (max-width: $tablet) {
-    font-size: 26px;
   }
 }
