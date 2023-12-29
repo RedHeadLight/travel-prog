@@ -5,6 +5,10 @@
   @media (max-width: $tablet) {
     padding-top: 23px;
   }
+
+  @media (max-width: $mobile) {
+    padding-top: 2px;
+  }
 }
 
 .reviews__cover {

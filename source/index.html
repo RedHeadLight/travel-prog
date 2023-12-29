@@ -263,101 +263,262 @@
           </div>
         </header>
         <div class="container hero__container">
-          <div class="hero__slider hero-slider">
-            <div class="hero-slider__slide">
-              <div class="hero-slider__texts">
-                <h1>Захватывающие вершины Кавказа</h1>
-                <p>
-                  В сопровождении&nbsp;опытных гидов вы&nbsp;пройдёте
-                  через&nbsp;потрясающие ландшафты и совершите восход
-                  на&nbsp;вершину горы Чегет.
-                </p>
-                <a class="hero__button" href="#">Смотреть тур</a>
-              </div>
-              <div class="hero-slider__media">
-                <iframe
-                  loading="lazy"
-                  width="482"
-                  height="317"
-                  src="./img/video-desktop.jpg"
-                  title="YouTube video player"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                  allowfullscreen
-                ></iframe>
-                <a
-                  class="hero-slider__play-button hero-play-button"
-                  href="https://www.youtube.com/watch?v=9TZXsZItgdw"
-                  aria-label="Кнопка запуска видео."
-                >
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="56"
-                    height="56"
-                    viewBox="0 0 56 56"
-                    fill="none"
-                  >
-                    <path d="M37 28L25 17V39L37 28Z" stroke="black" />
-                  </svg>
-                </a>
-              </div>
-              <div class="hero__footer hero-footer">
-                <div class="hero-footer__wrapper">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="12"
-                    height="12"
-                  >
-                    <use xlink:href="./img/sprite.svg#moon-icon"></use>
-                  </svg>
-                  <span class="hero-footer__button">6 дней/5 ночей</span>
+          <div class="hero__slider hero-slider swiper" data-hero>
+            <div class="swiper-wrapper">
+              <div class="hero-slider__slide swiper-slide">
+                <div class="hero-slider__texts">
+                  <h1>Захватывающие вершины Кавказа</h1>
+                  <p>
+                    В сопровождении&nbsp;опытных гидов вы&nbsp;пройдёте
+                    через&nbsp;потрясающие ландшафты и совершите восход
+                    на&nbsp;вершину горы Чегет.
+                  </p>
+                  <a class="hero__button" href="#">Смотреть тур</a>
                 </div>
-                <div class="hero-footer__wrapper">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="12"
-                    height="12"
-                    viewBox="0 0 12 12"
-                    fill="none"
+                <div class="hero-slider__media">
+                  <iframe
+                    loading="lazy"
+                    width="482"
+                    height="317"
+                    src="./img/video-desktop.jpg"
+                    title="YouTube video player"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen
+                  ></iframe>
+                  <a
+                    class="hero-slider__play-button hero-play-button"
+                    href="https://www.youtube.com/watch?v=9TZXsZItgdw"
+                    aria-label="Кнопка запуска видео."
                   >
-                    <g clip-path="url(#clip0_1303_633)">
-                      <path
-                        d="M10.909 11.4545H8.94536V0.54541H10.909V11.4545Z"
-                        stroke="white"
-                        stroke-miterlimit="16"
-                        stroke-linecap="round"
-                      />
-                      <path
-                        d="M6.98173 11.4545V3.52062H5.01809L5.0181 11.4545H6.98173Z"
-                        stroke="white"
-                        stroke-miterlimit="16"
-                        stroke-linecap="round"
-                      />
-                      <path
-                        d="M3.05446 11.4545V6.49582H1.09082V11.4545H3.05446Z"
-                        stroke="white"
-                        stroke-miterlimit="16"
-                        stroke-linecap="round"
-                      />
-                    </g>
-                    <defs>
-                      <clipPath id="clip0_1303_633">
-                        <rect width="12" height="12" fill="white" />
-                      </clipPath>
-                    </defs>
-                  </svg>
-                  <span class="hero-footer__button">Высокая сложность</span>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="56"
+                      height="56"
+                      viewBox="0 0 56 56"
+                      fill="none"
+                    >
+                      <path d="M37 28L25 17V39L37 28Z" stroke="black" />
+                    </svg>
+                  </a>
+                </div>
+                <div class="hero__footer hero-footer">
+                  <div class="hero-footer__wrapper">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="12"
+                      height="12"
+                    >
+                      <use xlink:href="./img/sprite.svg#moon-icon"></use>
+                    </svg>
+                    <span class="hero-footer__button">6 дней/5 ночей</span>
+                  </div>
+                  <div class="hero-footer__wrapper">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="12"
+                      height="12"
+                      viewBox="0 0 12 12"
+                      fill="none"
+                    >
+                      <g clip-path="url(#clip0_1303_633)">
+                        <path
+                          d="M10.909 11.4545H8.94536V0.54541H10.909V11.4545Z"
+                          stroke="white"
+                          stroke-miterlimit="16"
+                          stroke-linecap="round"
+                        />
+                        <path
+                          d="M6.98173 11.4545V3.52062H5.01809L5.0181 11.4545H6.98173Z"
+                          stroke="white"
+                          stroke-miterlimit="16"
+                          stroke-linecap="round"
+                        />
+                        <path
+                          d="M3.05446 11.4545V6.49582H1.09082V11.4545H3.05446Z"
+                          stroke="white"
+                          stroke-miterlimit="16"
+                          stroke-linecap="round"
+                        />
+                      </g>
+                      <defs>
+                        <clipPath id="clip0_1303_633">
+                          <rect width="12" height="12" fill="white" />
+                        </clipPath>
+                      </defs>
+                    </svg>
+                    <span class="hero-footer__button">Высокая сложность</span>
+                  </div>
+                </div>
+              </div>
+              <div class="hero-slider__slide swiper-slide">
+                <div class="hero-slider__texts">
+                  <h1>Невероятная природа&nbsp;Камчатки</h1>
+                  <p>
+                    Незабываемое приключение, во время которого вы отправитесь в путешествие по одному из самых нетронутых уголков дикой природы в мире.
+                  </p>
+                  <a class="hero__button" href="#">Смотреть тур</a>
+                </div>
+                <div class="hero-slider__media">
+                  <iframe
+                    loading="lazy"
+                    width="482"
+                    height="317"
+                    src="./img/video-desktop.jpg"
+                    title="YouTube video player"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen
+                  ></iframe>
+                  <a
+                    class="hero-slider__play-button hero-play-button"
+                    href="https://www.youtube.com/watch?v=9TZXsZItgdw"
+                    aria-label="Кнопка запуска видео."
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="56"
+                      height="56"
+                      viewBox="0 0 56 56"
+                      fill="none"
+                    >
+                      <path d="M37 28L25 17V39L37 28Z" stroke="black" />
+                    </svg>
+                  </a>
+                </div>
+                <div class="hero__footer hero-footer">
+                  <div class="hero-footer__wrapper">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="12"
+                      height="12"
+                    >
+                      <use xlink:href="./img/sprite.svg#moon-icon"></use>
+                    </svg>
+                    <span class="hero-footer__button">9 дней/10 ночей</span>
+                  </div>
+                  <div class="hero-footer__wrapper">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="12"
+                      height="12"
+                      viewBox="0 0 12 12"
+                      fill="none"
+                    >
+                      <g clip-path="url(#clip0_1303_633)">
+                        <path
+                          d="M10.909 11.4545H8.94536V0.54541H10.909V11.4545Z"
+                          stroke="white"
+                          stroke-miterlimit="16"
+                          stroke-linecap="round"
+                        />
+                        <path
+                          d="M6.98173 11.4545V3.52062H5.01809L5.0181 11.4545H6.98173Z"
+                          stroke="white"
+                          stroke-miterlimit="16"
+                          stroke-linecap="round"
+                        />
+                        <path
+                          d="M3.05446 11.4545V6.49582H1.09082V11.4545H3.05446Z"
+                          stroke="white"
+                          stroke-miterlimit="16"
+                          stroke-linecap="round"
+                        />
+                      </g>
+                      <defs>
+                        <clipPath id="clip0_1303_633">
+                          <rect width="12" height="12" fill="white" />
+                        </clipPath>
+                      </defs>
+                    </svg>
+                    <span class="hero-footer__button">Средняя сложность</span>
+                  </div>
+                </div>
+              </div>
+              <div class="hero-slider__slide swiper-slide">
+                <div class="hero-slider__texts">
+                  <h1>Магические&nbsp;пейзажи Алтайского&nbsp;Края</h1>
+                  <p>
+                    Алтайский трекинг-тур — это захватывающее приключение с посещением магических и захватывающих дух ландшафтов Алтайских гор.
+                  </p>
+                  <a class="hero__button" href="#">Смотреть тур</a>
+                </div>
+                <div class="hero-slider__media">
+                  <iframe
+                    loading="lazy"
+                    width="482"
+                    height="317"
+                    src="./img/video-desktop.jpg"
+                    title="YouTube video player"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen
+                  ></iframe>
+                  <a
+                    class="hero-slider__play-button hero-play-button"
+                    href="https://www.youtube.com/watch?v=9TZXsZItgdw"
+                    aria-label="Кнопка запуска видео."
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="56"
+                      height="56"
+                      viewBox="0 0 56 56"
+                      fill="none"
+                    >
+                      <path d="M37 28L25 17V39L37 28Z" stroke="black" />
+                    </svg>
+                  </a>
+                </div>
+                <div class="hero__footer hero-footer">
+                  <div class="hero-footer__wrapper">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="12"
+                      height="12"
+                    >
+                      <use xlink:href="./img/sprite.svg#moon-icon"></use>
+                    </svg>
+                    <span class="hero-footer__button">8 дней/7 ночей</span>
+                  </div>
+                  <div class="hero-footer__wrapper">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="12"
+                      height="12"
+                      viewBox="0 0 12 12"
+                      fill="none"
+                    >
+                      <g clip-path="url(#clip0_1303_633)">
+                        <path
+                          d="M10.909 11.4545H8.94536V0.54541H10.909V11.4545Z"
+                          stroke="white"
+                          stroke-miterlimit="16"
+                          stroke-linecap="round"
+                        />
+                        <path
+                          d="M6.98173 11.4545V3.52062H5.01809L5.0181 11.4545H6.98173Z"
+                          stroke="white"
+                          stroke-miterlimit="16"
+                          stroke-linecap="round"
+                        />
+                        <path
+                          d="M3.05446 11.4545V6.49582H1.09082V11.4545H3.05446Z"
+                          stroke="white"
+                          stroke-miterlimit="16"
+                          stroke-linecap="round"
+                        />
+                      </g>
+                      <defs>
+                        <clipPath id="clip0_1303_633">
+                          <rect width="12" height="12" fill="white" />
+                        </clipPath>
+                      </defs>
+                    </svg>
+                    <span class="hero-footer__button">Высокая сложность</span>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-          <div class="hero-slider__buttons">
-            <button
-              class="hero-slider__button hero-slider__button--active"
-              type="button"
-            ></button>
-            <button class="hero-slider__button" type="button"></button>
-            <button class="hero-slider__button" type="button"></button>
-          </div>
+          <div class="hero-slider__buttons swiper-pagination" data-hero-pagination></div>
         </div>
       </section>
       <section class="tours" id="tours" data-test="tours">
@@ -1702,7 +1863,7 @@
                     </clipPath>
                   </defs>
                 </svg>
-                <span>Разъяснение&nbsp;сложности горных&nbsp;препятствий</span>
+                <span>Разъяснение сложности горных препятствий</span>
               </li>
             </ul>
           </div>
@@ -1984,8 +2145,8 @@
                 <span>Оборудование и снаряжение</span>
                 <p>
                   Мы предоставляем клиентам все&nbsp;необходимое оборудование,
-                  необходимое для путешествия. Это&nbsp;избавляет клиентов от&nbsp;необходимости покупать, брать c&nbsp;собой снаряжение, что делает
-                  путешествие&nbsp;более удобным и&nbsp;экономически выгодным.
+                  необходимое для путешествия. Это&nbsp;избавляет клиентов от&nbsp;необходимости покупать, брать c&nbsp;собой&nbsp;снаряжение, что делает
+                  путешествие более удобным и&nbsp;экономически выгодным.
                 </p>
               </div>
               <div class="features-slider__item features-item features-item--modified swiper-slide">
@@ -2016,9 +2177,8 @@
                 >
                 <p>
                   Предлагаем широкий выбор туров, отвечающих различным уровням
-                  мастерства&nbsp;и интересам. Мы&nbsp;также&nbsp;можем адаптировать маршруты к
-                  вашим конкретным потребностям и предпочтениям, чтобы вы
-                  получили индивидуальный опыт.
+                  мастерства и интересам. Мы&nbsp;также&nbsp;можем адаптировать маршруты к
+                  вашим конкретным потребностям и предпочтениям, чтобы&nbsp;вы&nbsp;получили индивидуальный опыт.
                 </p>
               </div>
               <div class="features-slider__item features-item features-item--safety swiper-slide">
@@ -2039,8 +2199,8 @@
                 <span class="features-item__title">Безопасность</span>
                 <p>
                   Уделяем внимание безопасности клиентов, внедряя строгие
-                  процедуры и протоколы безопасности.&nbsp;Имеем&nbsp;планы&nbsp;действий на&nbsp;случай&nbsp;непредвиденных обстоятельств и даём гарантию полной
-                  безопасности во время всего тура.
+                  процедуры и протоколы безопасности.&nbsp;Имеем&nbsp;планы&nbsp;действий на&nbsp;случай&nbsp;непредвиденных обстоятельств и&nbsp;даём гарантию полной
+                  безопасности во&nbsp;время всего тура.
                 </p>
               </div>
               <div class="features-slider__item features-item features-item--knowledge swiper-slide">
@@ -2061,7 +2221,7 @@
                 <span class="features-item__title">Экспертиза и знания</span>
                 <p>
                   Наша команда опытных гидов имеет обширные знания о местности,
-                  погодных условиях и технике безопасности. Это&nbsp;гарантирует, что&nbsp;наши клиенты находятся в&nbsp;надёжных руках и могут в полной мере
+                  погодных условиях и технике безопасности. Это гарантирует, что&nbsp;наши клиенты находятся в&nbsp;надёжных руках и могут в полной мере
                   насладиться опытом без&nbsp;опасений.
                 </p>
               </div>
@@ -2661,8 +2821,8 @@
           <div class="contacts__texts-wrapper contacts-wrapper">
             <div class="contacts__detail-block">
               <p>
-                Свяжитесь с нами любым удобным для вас способом
-                или&nbsp;приходите к нам в гости. Мы будем рады поделиться
+                Свяжитесь с нами любым удобным для&nbsp;вас&nbsp;способом
+                или&nbsp;приходите к&nbsp;нам&nbsp;в&nbsp;гости. Мы будем рады поделиться
                 увлекательными историями и подобрать для вас тур.
               </p>
               <div class="contacts__requisites">

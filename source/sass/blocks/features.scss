@@ -5,6 +5,10 @@
   @media (max-width: $tablet) {
     padding-bottom: 0;
   }
+
+  @media (max-width: $mobile) {
+    padding-top: 22px;
+  }
 }
 
 .features__title {
@@ -17,6 +21,11 @@
 
   @media (max-width: $tablet) {
     margin-top: 49px;
+  }
+
+  @media (max-width: $mobile) {
+    font-size: 22px;
+    margin-bottom: 20px;
   }
 }
 

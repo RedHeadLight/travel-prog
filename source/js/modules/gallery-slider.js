@@ -6,7 +6,6 @@ const initGallerySlider = () => {
   /* eslint-disable */
   const swiper = new Swiper(swiperEl, {
   /* eslint-enable */
-    loop: true,
     navigation: {
       nextEl: buttonNext,
       prevEl: buttonPrev,

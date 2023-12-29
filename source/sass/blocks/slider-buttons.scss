@@ -20,11 +20,6 @@
     padding: 17px 12px;
   }
 
-  @media (max-width: $mobile) {
-    margin-right: 10px;
-  }
-
-
   &:hover,
   &:focus {
     outline: 1px solid #1c3374;
@@ -56,17 +51,20 @@
 }
 
 .slider-buttons--feature {
-
   @media (max-width: $tablet) {
     display: none;
   }
 }
 
 .slider-buttons--gallery {
-
   @media (max-width: $tablet) {
     width: 33px;
     height: 33px;
+  }
+
+  @media (max-width: $mobile) {
+    width: 37px;
+    height: 35px;
   }
 }
 

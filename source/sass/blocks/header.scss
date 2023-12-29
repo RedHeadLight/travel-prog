@@ -8,12 +8,7 @@
   width: 100%;
   max-width: 1200px;
 
-  @media (max-width: $tablet) {
-    padding: 5px 0;
-  }
-
   @media (max-width: $mobile) {
-    padding: 0;
     overflow: hidden;
     height: 100px;
   }
@@ -26,12 +21,12 @@
   justify-content: space-between;
 
   @media (max-width: $tablet) {
-    padding: 0 40px;
+    padding: 5px 40px;
     position: relative;
   }
 
   @media (max-width: $mobile) {
-    padding: 0;
+    padding: 0 0 12px;
   }
 }
 
@@ -92,7 +87,7 @@
 
   @media (max-width: $mobile) {
     display: grid;
-    gap: 14px;
+    gap: 9px;
     width: 30%;
   }
 }

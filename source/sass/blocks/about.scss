@@ -27,6 +27,13 @@
     width: 100%;
     top: -22px;
   }
+
+  @media (max-width: $mobile) {
+    position: static;
+    margin: 0 -15px;
+    max-width: calc(100% + 30px);
+    width: calc(100% + 30px);
+  }
 }
 
 .about__texts {
@@ -37,6 +44,6 @@
   }
 
   @media (max-width: $mobile) {
-    padding-left: 15px;
+    padding-left: 0;
   }
 }

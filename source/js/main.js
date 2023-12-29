@@ -6,6 +6,7 @@ import {Form} from './modules/form-validate/form';
 import {Swiper} from './vendor/swiper';
 /* eslint-enable */
 
+import {initHeroSlider} from './modules/hero-slider';
 import {initToursSlider} from './modules/tours-slider';
 import {initTrainersSlider} from './modules/trainers-slider';
 import {initReviewsSlider} from './modules/reviews-slider';
@@ -21,6 +22,7 @@ window.addEventListener('DOMContentLoaded', () => {
 
     initMenu();
 
+    initHeroSlider();
     initToursSlider();
     initTrainersSlider();
     initReviewsSlider();

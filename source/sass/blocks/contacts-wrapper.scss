@@ -13,11 +13,13 @@
   @media (max-width: $tablet) {
     margin-right: 8px;
     width: 16%;
-    margin-top: 0px;
+    margin-top: 0;
   }
 
   @media (max-width: $mobile) {
     margin-right: 10px;
+    width: 22px;
+    height: 22px;
   }
 }
 
@@ -29,10 +31,6 @@
     margin-left: 2px;
     margin-bottom: 0;
   }
-
-  @media (max-width: $mobile) {
-    margin-bottom: 30px;
-  }
 }
 
 .contacts-wrapper__mail svg {
@@ -40,8 +38,9 @@
 
 
   @media (max-width: $tablet) {
-    margin-top: 0px;
+    margin-top: 0;
     margin-left: 0;
+    margin-right: 10px;
   }
 
   @media (max-width: $mobile) {
@@ -52,14 +51,23 @@
 .contacts-wrapper__address svg {
   margin-right: 30px;
 
-
-  @media (max-width: $mobile) {
+  @media (max-width: $tablet) {
     margin-right: 10px;
   }
 }
 
 .contacts-wrapper__address {
   display: flex;
+
+  @media (max-width: $mobile) {
+    padding-right: 130px;
+  }
+}
+
+.contacts-wrapper__address p {
+  @media (max-width: $mobile) {
+    margin-bottom: 0;
+  }
 }
 
 .contacts-wrapper {
@@ -73,6 +81,28 @@
   }
 }
 
+.contacts-wrapper picture {
+  margin-left: -40px;
+  margin-right: -40px;
+
+  @media (max-width: $mobile) {
+    margin-left: -15px;
+    margin-right: -15px;
+  }
+}
+
 .contacts-wrapper img {
   margin-top: 16px;
+  object-fit: cover;
+
+  @media (max-width: $tablet) {
+    display: block;
+    margin-top: 0;
+    width: 100%;
+    aspect-ratio: 768/340;
+  }
+
+  @media (max-width: $mobile) {
+    aspect-ratio: 350/320;
+  }
 }

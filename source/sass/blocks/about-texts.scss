@@ -17,6 +17,10 @@
 .about-texts__wrapper p {
   @include regular-text;
   margin: 12px 0 25px;
+
+  @media (max-width: $mobile) {
+    line-height: 20px;
+  }
 }
 
 .about-texts__title {
@@ -32,5 +36,7 @@
   @media (max-width: $mobile) {
     @include small-title;
     margin-bottom: 25px;
+    margin-left: 0;
+    margin-top: 5px;
   }
 }

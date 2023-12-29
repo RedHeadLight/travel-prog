@@ -3,10 +3,15 @@
   margin-top: 37px;
   gap: 120px;
   padding: 0 10px;
+  overflow: hidden;
 
   @media (max-width: $tablet) {
     margin-top: 56px;
     padding: 0;
+  }
+
+  @media (max-width: $mobile) {
+    margin-top: 7px;
   }
 }
 
@@ -27,12 +32,19 @@
 
   @media (max-width: $mobile) {
     width: 320px;
+    display: block;
+    padding: 20px;
   }
 }
 
 .reviews-slider__item picture,
 .reviews-slider__item img {
   flex-shrink: 0;
+
+  @media (max-width: $mobile) {
+    width: 100%;
+    display: block;
+  }
 }
 
 .reviews-slider__buttons {
@@ -42,7 +54,6 @@
 }
 
 .reviews-slider__item img {
-
   @media (max-width: $tablet) {
     width: 100%;
   }

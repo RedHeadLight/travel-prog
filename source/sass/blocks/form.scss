@@ -4,8 +4,13 @@
   padding: 295px 0 293px;
 
   @media (max-width: $tablet) {
-    padding-top: 245px;
+    padding-top: 190px;
     padding-bottom: 188px;
+  }
+
+  @media (max-width: $mobile) {
+    padding-top: 175px;
+    padding-bottom: 175px;
   }
 }
 
@@ -36,7 +41,11 @@
 
   @media (max-width: $tablet) {
     color: #ffffff;
-    margin-bottom: 26px;
+    margin-bottom: 28px;
+  }
+
+  @media (max-width: $mobile) {
+    margin-bottom: 8px;
   }
 }
 
@@ -48,7 +57,11 @@
   text-align: center;
 
   @media (max-width: $tablet) {
-    margin-bottom: 20px;
+    margin-bottom: 23px;
+  }
+
+  @media (max-width: $mobile) {
+    margin-bottom: 0;
   }
 }
 
@@ -60,7 +73,7 @@
 
   @media (max-width: $tablet) {
     display: grid;
-    gap: 7px;
+    gap: 8px;
   }
 }
 
@@ -71,6 +84,8 @@
   @media (max-width: $mobile) {
     margin-bottom: 20px;
     margin-top: 10px;
+    font-size: 12px;
+    line-height: 18px;
   }
 }
 

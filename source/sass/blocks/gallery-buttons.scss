@@ -40,8 +40,12 @@
 }
 
 .gallery-buttons {
-
   @media (max-width: $tablet) {
     margin-top: 30px;
+  }
+
+  @media (max-width: $mobile) {
+    margin-top: 14px;
+    justify-content: flex-end;
   }
 }
