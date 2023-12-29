@@ -38,3 +38,10 @@
     }
   }
 }
+
+.gallery-buttons {
+
+  @media (max-width: $tablet) {
+    margin-top: 30px;
+  }
+}

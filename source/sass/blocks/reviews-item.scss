@@ -15,7 +15,7 @@
 
   @media (max-width: $tablet) {
     line-height: 19px;
-    margin-bottom: 6px;
+    margin-bottom: 7px;
   }
 }
 
@@ -23,6 +23,10 @@
   @include big-caption;
   display: block;
   margin: 12px 0 4px;
+
+  @media (max-width: $tablet) {
+    margin-top: 22px;
+  }
 
   @media (max-width: $mobile) {
     @include big-caption;

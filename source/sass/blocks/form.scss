@@ -2,6 +2,11 @@
   background-image: url("../img/form-background-desktop.jpg");
   background-size: cover;
   padding: 295px 0 293px;
+
+  @media (max-width: $tablet) {
+    padding-top: 245px;
+    padding-bottom: 188px;
+  }
 }
 
 .form__container {
@@ -31,6 +36,7 @@
 
   @media (max-width: $tablet) {
     color: #ffffff;
+    margin-bottom: 26px;
   }
 }
 
@@ -40,6 +46,10 @@
   display: grid;
   justify-items: center;
   text-align: center;
+
+  @media (max-width: $tablet) {
+    margin-bottom: 20px;
+  }
 }
 
 .form__wrapper {
@@ -50,6 +60,7 @@
 
   @media (max-width: $tablet) {
     display: grid;
+    gap: 7px;
   }
 }
 
@@ -59,6 +70,7 @@
 
   @media (max-width: $mobile) {
     margin-bottom: 20px;
+    margin-top: 10px;
   }
 }
 

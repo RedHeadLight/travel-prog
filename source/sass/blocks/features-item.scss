@@ -73,3 +73,24 @@
     margin-bottom: 26px;
   }
 }
+
+.features-item--modified {
+
+  @media (max-width: $tablet) {
+    padding-top: 0;
+  }
+}
+
+.features-item--nature {
+  @media (max-width: $tablet) {
+    width: 380px;
+  }
+}
+
+.features-item--nature span {
+
+  @media (max-width: $tablet) {
+    width: 200px;
+    margin-left: 67px;
+  }
+}

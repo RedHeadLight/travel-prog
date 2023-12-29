@@ -26,7 +26,7 @@
   }
 
   @media (max-width: $mobile) {
-    padding: 20px 15px;
+    padding: 9px 15px 20px 15px;
   }
 }
 
@@ -38,6 +38,11 @@
   @media (max-width: $tablet) {
     display: block;
     width: 80%;
+  }
+
+  @media (max-width: $mobile) {
+    width: 99%;
+    line-height: 19px;
   }
 }
 
@@ -61,6 +66,11 @@
 
 .learning__buttons {
   margin-top: 15px;
+
+  @media (max-width: $mobile) {
+    width: 81px;
+    gap: 0;
+  }
 }
 
 .learning__slider {

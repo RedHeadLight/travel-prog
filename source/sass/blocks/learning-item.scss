@@ -9,6 +9,11 @@
   display: table;
   max-width: 140px;
   margin-top: 3px;
+
+  @media (max-width: $mobile) {
+    margin-top: 0;
+    margin-bottom: 13px;
+  }
 }
 
 .learning-item p {
@@ -17,6 +22,11 @@
 
   @media (max-width: $tablet) {
     line-height: 16px;
+  }
+
+  @media (max-width: $mobile) {
+    margin-top: 0;
+    margin-bottom: 13px;
   }
 }
 

@@ -54,3 +54,22 @@
     }
   }
 }
+
+.slider-buttons--feature {
+
+  @media (max-width: $tablet) {
+    display: none;
+  }
+}
+
+.slider-buttons--gallery {
+
+  @media (max-width: $tablet) {
+    width: 33px;
+    height: 33px;
+  }
+}
+
+.slider-buttons-item--tours {
+  margin: 0;
+}

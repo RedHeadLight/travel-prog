@@ -13,7 +13,9 @@
   }
 
   @media (max-width: $mobile) {
-    padding: 15px;
+    padding: 0;
+    overflow: hidden;
+    height: 100px;
   }
 }
 
@@ -26,6 +28,10 @@
   @media (max-width: $tablet) {
     padding: 0 40px;
     position: relative;
+  }
+
+  @media (max-width: $mobile) {
+    padding: 0;
   }
 }
 
@@ -52,9 +58,9 @@
   }
 
   @media (max-width: $mobile) {
-    padding: 14px 0;
+    padding: 0;
     color: #ffffff;
-    margin-left: 73px;
+    margin-left: 28px;
   }
 
   &:hover,
@@ -102,7 +108,15 @@
     align-items: center;
     justify-content: center;
   }
+
+  @media (max-width: $mobile) {
+    width: 26px;
+    height: 26px;
+    margin-top: 15px;
+    margin-left: 10px;
+  }
 }
+
 
 .header__logo {
   @media (max-width: $tablet) {
@@ -117,5 +131,9 @@
     position: static;
     transform: none;
     margin-left: 0;
+  }
+
+  @media (max-width: $mobile) {
+    margin-top: 14px;
   }
 }

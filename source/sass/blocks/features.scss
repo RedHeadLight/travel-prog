@@ -1,6 +1,10 @@
 .features {
   padding: 76px 0;
   overflow: hidden;
+
+  @media (max-width: $tablet) {
+    padding-bottom: 0;
+  }
 }
 
 .features__title {
@@ -18,4 +22,8 @@
 
 .features__btns {
   justify-content: center;
+
+  @media (max-width: $tablet) {
+    display: none;
+  }
 }

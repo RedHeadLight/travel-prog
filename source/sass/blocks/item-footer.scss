@@ -25,4 +25,8 @@
 
 .item-footer__wrapper {
   margin-right: 28px;
+
+  @media (max-width: $mobile) {
+    margin-right: 23px;
+  }
 }

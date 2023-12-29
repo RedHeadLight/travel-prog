@@ -8,6 +8,10 @@
     padding-top: 138px;
     padding-bottom: 40px;
   }
+
+  @media (max-width: $mobile) {
+    padding-bottom: 38px;
+  }
 }
 
 .hero__container {
@@ -30,6 +34,11 @@
     margin-top: 73px;
     margin-bottom: 15px;
   }
+
+  @media (max-width: $mobile) {
+    margin-top: 0;
+    font-size: 26px;
+  }
 }
 
 .hero__container p {
@@ -48,6 +57,8 @@
     @include text;
     color: #ffffff;
     margin-bottom: 60px;
+    font-size: 15px;
+    line-height: 21px;
   }
 }
 

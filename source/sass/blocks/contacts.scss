@@ -1,5 +1,9 @@
 .contacts {
   padding: 87px 0 45px;
+
+  @media (max-width: $tablet) {
+    padding-top: 59px;
+  }
 }
 
 .contacts__title {
@@ -7,6 +11,7 @@
 
   @media (max-width: $tablet) {
     @include small-title;
+    margin-bottom: 17px;
   }
 }
 
@@ -31,17 +36,12 @@
 .contacts__cover {
   display: grid;
   gap: 8px;
-
-  @media (max-width: $tablet) {
-    gap: 6px;
-  }
 }
 
 .contacts__detail-block {
   max-width: 500px;
 
   @media (max-width: $tablet) {
-    margin-left: 45px;
     max-width: 100%;
   }
 
@@ -50,11 +50,18 @@
   }
 }
 
+.contacts__detail-block p {
+
+  @media (max-width: $tablet) {
+    width: 71%;
+  }
+}
 .contacts__cover span {
   @include semibold;
 
   @media (max-width: $tablet) {
     @include smallbold;
+    font-size: 16px;
   }
 
   @media (max-width: $mobile) {
@@ -77,7 +84,7 @@
 .contacts__requisites {
   @media (max-width: $tablet) {
     display: flex;
-    gap: 40px;
+    height: 44px;
   }
 
   @media (max-width: $mobile) {

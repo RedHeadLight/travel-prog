@@ -10,6 +10,11 @@
 .about__container {
   display: grid;
   grid-template-columns: 50% 50%;
+
+  @media (max-width: $mobile) {
+    display: block;
+    position: static;
+  }
 }
 
 .about img {
@@ -29,5 +34,9 @@
 
   @media (max-width: $tablet) {
     padding-left: 68px;
+  }
+
+  @media (max-width: $mobile) {
+    padding-left: 15px;
   }
 }

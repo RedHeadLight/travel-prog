@@ -4,6 +4,10 @@
   @media (max-width: $tablet) {
     padding-top: 45px;
   }
+
+  @media (max-width: $mobile) {
+    padding-top: 32px;
+  }
 }
 
 .tours__wrapper {
@@ -75,6 +79,11 @@
   @media (max-width: $tablet) {
     gap: 3px;
   }
+
+  @media (max-width: $mobile) {
+    width: 78px;
+    margin-bottom: 11px;
+  }
 }
 
 .tours__title {
@@ -85,5 +94,11 @@
     margin-bottom: 23px;
     font-size: 35px;
     line-height: 35px;
+  }
+
+  @media (max-width: $mobile) {
+    font-size: 22px;
+    line-height: 22px;
+    margin-top: 18px;
   }
 }
